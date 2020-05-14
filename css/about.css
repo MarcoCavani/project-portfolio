@@ -1,0 +1,39 @@
+/*about*/
+@media only screen and (max-width:900px){
+    .menu{
+        display: none;
+    } 
+
+}
+
+
+
+@media only screen and (max-width:900px){
+    .tracker{
+        display: inherit;
+        opacity: 1;
+    } 
+
+}
+@media only screen and (max-width:900px){
+    .hamburger{
+        display: block;
+
+    } 
+
+}
+
+
+@media only screen and (max-width:900px){
+    #navigation{
+        padding: 0rem 2rem 0rem 2rem;
+    } 
+}
+
+
+
+@media only screen and (max-width:900px){
+    h1{
+        font-size: 3rem;
+    }
+}
