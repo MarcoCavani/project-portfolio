@@ -1,720 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto+Slab&display=swap');
-        </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="description" content="This website is portfolio about web development and design">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/services.css">
-        <link rel="stylesheet" href="css/resume.css">
-        <link rel="shortcut icon" href="images/logo2.png" />
-        <title>Marco web development</title>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
-        .tafe{
-
-            color: #cc33cc;
-            font-size: 2rem;
-            height: 0;
-            width: 30rem;
-            margin: 2rem 5rem;
-
-        }
-        .tafe:after{
-            content: url(images/dtwd-logo.svg);
-        }
-
-        .container-form{
-            width: 100%;
-            height: calc(100% - 12rem);
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            border: 1px solid gray;
-            justify-content: space-around;
-            padding: 10rem;
-        }
-
-
-        aside h4{
-            width: 100%;
-            text-align: center;
-            font-size: 2rem;
-            color: :#3366cc;
-
-        }
-
-        article{
-            /*            border: 1px solid;*/
-
-        }
-        article ul.about{
-            display: flex;
-            margin-top: 2rem;
-            height: 18rem;
-        }
-        article ul.about li{
-            flex-basis: 33.3%;
-            padding: 1rem;
-        }
-
-        ul.about li img{
-            height: 5rem;
-            width: 100%;
-            margin: 0 auto;
-        }
-        ul.about li img ~ p{
-            text-align: center;
-            font-size: 1.3rem;
-            color: #4c4c4cd1;
-            font-weight: lighter;
-            font-style: italic;
-            font-family: "Helvetica", sans-serif;
-        }
-        h1.meself{
-            text-align: center;
-            font-size: 2.5rem;
-            color:#3a76ed;
-            font-weight: bold;
-
-
-
-
-        }
-        h2.sub-title{
-            text-align: center;
-            font-size: 1.5rem;
-            color:#4c4c4cd1;
-            font-family: "Helvetica", sans-serif;
-            font-weight: bold;
-        }
-
-        h2.page-title{
-            font-size: 1.5rem;
-            font-size: 2.5rem;
-            color:#3a76ed;
-            font-weight: bold;
-        }
-        h2.page-title::after{
-            content: '';
-            position: absolute;
-            width: 0;
-            margin-top: 5rem;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 20px solid #cccccc;
-            clear: both;
-        }
-
-
-        iframe {
-            flex-basis: 50%;
-            height: 40rem;
-            margin: 0 auto;
-
-
-        }
-
-        #form{
-            flex-basis: 40%;
-            height: 40rem;
-            margin: 0 auto;
-            border: 1px solid grey;
-        }
-
-
-        #form{
-
-        }
-        footer{
-            display: flex;
-            flex-direction: row;
-            background-color: #ebebeb;
-            justify-content: center;
-            flex-wrap: wrap;
-
-        }
-        .sitemap-item{
-            flex-basis: 26%;
-            margin-bottom: 2rem;
-            margin: 0rem 2rem;
-
-
-        }
-        .sitemap-title{
-            font-size: 1.8rem;
-            color: #3366cc;
-            margin-bottom: 2rem;
-
-        }
-        .sitemap-title::after{
-            content: '';
-            position: absolute;
-            width: 0;
-            margin-top: .8rem;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-top: 10px solid #cccccc;
-            clear: both;
-        }
-
-        .sitemap-content{
-            display:flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-
-
-        .sitemap-list{
-
-        }
-        .sitemap-list li{
-            font-size: 1.5rem;
-            color: #000;
-            font-family: "Helvetica", sans-serif;
-
-
-        }
-        .sitemap-icon{
-            clear: both;
-
-        }
-        .sitemap-icon li{
-            height: 4rem;
-            width: 4rem;
-            display: inline;
-            font-family: "Helvetica", sans-serif;
-
-        }
-        .sitemap-icon li img{
-            height: 3rem;
-            width: 3rem;
-
-        }
-
-        address{
-
-        }
-
-        p.address{
-            font-size: 1.5rem;
-            color: #cccccc;
-            font-family: "Helvetica", sans-serif;
-        }
-        p.address a{
-            font-size: 1.5rem;
-            color: #000;
-            font-family: "Helvetica", sans-serif;
-        }
-        .logos{
-            height: 4rem;
-            width: 4rem;
-            margin: .2rem;
-
-        }
-
-        .North-Metropolitan{
-            height: 4rem;
-
-        }
-        .cool-stuff{
-            color: #5b5b5b;
-            font-size: 2rem;
-        }
-
-
-        .input-section{
-            width: 75%;
-            float: left;
-            padding: 1rem;
-            height: calc(100% - 12rem);
-
-        }
-
-        #question{
-            margin: 0rem 1rem;
-            width: 90%;
-            border: 2px solid grey;
-        }
-        .img-section{
-            float: right;
-            width: 0%;
-            height: calc(100% - 12rem);
-            display: flex;
-            justify-content: center;
-
-        }
-        .img-section img{
-            height: 0%;
-            margin: auto;
-        }
-        .form-title{
-            text-align: center;
-            color: #ebebeb;
-            font-size: 2rem;
-            height: 6rem;
-            line-height: 6rem;
-            background-color: #3366cc;
-        }
-        button.form-submission{
-            clear: both;
-            background-color: #3366cc;
-            text-align: center;
-            color: white;
-            width: 100%;
-            font-size: 2rem;
-            height: 6rem;
-        }
-        #name, #email {
-            margin: 0rem 1rem;
-            height: 2.5rem;
-            font-size: 1.4rem;
-            width: 90%;
-            border: 1px solid grey;
-        }
-        .input-section > label{
-            font-size: 1.5rem;
-            color: #000;
-        }
-
-        .input-section > label:after{
-            content: "*";
-            color:red;
-        }
-
-
-        input[type="checkbox"]{
-            height: 1.5rem;
-            width: 1.5rem;
-            margin: 0rem 1rem;
-        }
-
-        label [for="term"]{
-            font-size: 1.2rem;
-        }
-        #share-buttons img{
-            height: 4rem;
-        }
-        .project{
-            margin: 0 auto;
-            width: 60%;
-            text-align: center;
-        }
-
+        @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto+Slab&display=swap');
     </style>
-    <body>
-        <div id="wrapper">
-            <header>
-                <nav id="navigation">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="This website is portfolio about web development and design">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="shortcut icon" href="images/logo2.png" />
+    <title>Marco web development</title>
+</head>
+<style>
+    #n-msg, #e-msg {
+        position: absolute;
+        margin: -1.9rem 26rem;
+        
+    }
 
-                    <div class="logo">
+    .tafe {
 
-                        <img src="images/logo2.png" alt="Logo Marco web development">
-                    </div>
+        color: #cc33cc;
+        font-size: 2rem;
+        height: 0;
+        width: 30rem;
+        margin: 2rem 5rem;
 
-                    <nav id="navigation-phone">
-                        <ul class="hamburger">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+    }
 
-                        <div class="tracker"></div>
-                        <ul class="menu">
-                            <li class="list"><a>About</a></li>
-                            <li class="list"><a>Portfolio</a></li>
-                            <li class="list"><a>Resume</a></li>
-                            <li class="list"><a>Contact</a></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                        </ul>
-                    </nav>
+    .tafe:after {
+        content: url(images/dtwd-logo.svg);
+    }
 
+    .container-form {
+        width: 100%;
+        height: calc(100% - 12rem);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 1px solid gray;
+        justify-content: space-around;
+        padding: 10rem;
+    }
+
+
+    aside h4 {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        color: #3366cc;
+
+    }
+
+    article ul.about {
+        display: flex;
+        margin-top: 2rem;
+        height: 18rem;
+    }
+
+    article ul.about li {
+        flex-basis: 33.3%;
+        padding: 1rem;
+    }
+
+    ul.about li img {
+        height: 5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    ul.about li img~p {
+        text-align: center;
+        font-size: 1.3rem;
+        color: #4c4c4cd1;
+        font-weight: lighter;
+        font-style: italic;
+        font-family: "Helvetica", sans-serif;
+    }
+
+    h1.meself {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #3a76ed;
+        font-weight: bold;
+
+
+
+
+    }
+
+    h2.sub-title {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #4c4c4cd1;
+        font-family: "Helvetica", sans-serif;
+        font-weight: bold;
+    }
+
+    h2.page-title {
+        font-size: 1.5rem;
+        font-size: 2.5rem;
+        color: #3a76ed;
+        font-weight: bold;
+    }
+
+    h2.page-title::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        margin-top: 5rem;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #cccccc;
+        clear: both;
+    }
+
+
+    iframe {
+        flex-basis: 50%;
+        height: 40rem;
+        margin: 0 auto;
+
+
+    }
+
+    #form {
+        flex-basis: 40%;
+        height: 40rem;
+        margin: 0 auto;
+        border: 1px solid grey;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #ebebeb;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .sitemap-item {
+        flex-basis: 26%;
+        margin-bottom: 2rem;
+        margin: 0rem 2rem;
+
+
+    }
+
+    .sitemap-title {
+        font-size: 1.8rem;
+        color: #3366cc;
+        margin-bottom: 2rem;
+
+    }
+
+    .sitemap-title::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        margin-top: .8rem;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #cccccc;
+        clear: both;
+    }
+
+    .sitemap-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .sitemap-list li {
+        font-size: 1.5rem;
+        color: #000;
+        font-family: "Helvetica", sans-serif;
+
+
+    }
+
+    .sitemap-icon {
+        clear: both;
+
+    }
+
+    .sitemap-icon li {
+        display: inline;
+        font-family: "Helvetica", sans-serif;
+
+    }
+
+    .sitemap-icon li img {
+        height: 3rem;
+        width: 3rem;
+
+    }
+
+    p.address {
+        font-size: 1.5rem;
+        color: #cccccc;
+        font-family: "Helvetica", sans-serif;
+    }
+
+    p.address a {
+        font-size: 1.5rem;
+        color: #000;
+        font-family: "Helvetica", sans-serif;
+    }
+
+    .logos {
+        height: 4rem;
+        width: 4rem;
+        margin: .2rem;
+
+    }
+
+    .North-Metropolitan {
+        height: 4rem;
+
+    }
+
+    .cool-stuff {
+        color: #5b5b5b;
+        font-size: 2rem;
+    }
+
+
+    .input-section {
+        width: 90%;
+        float: left;
+        padding: 1rem;
+        height: calc(100% - 12rem);
+
+    }
+
+    #question {
+        margin: 0rem 1rem;
+        width: 60%;
+        border: 2px solid grey;
+    }
+/* 
+    .img-section {
+        float: right;
+        width: 10%;
+        height: calc(100% - 12rem);
+        display: flex;
+        justify-content: center;
+        border: 1rem solid black;
+
+    }
+
+    .img-section img {
+        height: 0%;
+        margin: auto;
+    } */
+
+    .form-title {
+        text-align: center;
+        color: #ebebeb;
+        font-size: 2rem;
+        height: 6rem;
+        line-height: 6rem;
+        background-color: #3366cc;
+    }
+
+    button.form-submission {
+        clear: both;
+        background-color: #3366cc;
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 2rem;
+        height: 6rem;
+    }
+
+    #name,
+    #email {
+        margin: 0rem 1rem;
+        height: 2.5rem;
+        font-size: 1.4rem;
+        width: 60%;
+        border: 1px solid grey;
+    }
+
+    .input-section>label {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    .input-section>label:after {
+        content: "*";
+        color: red;
+    }
+
+
+    input[type="checkbox"] {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 0rem 1rem;
+    }
+
+    label [for="term"] {
+        font-size: 1.2rem;
+    }
+
+    #share-buttons img {
+        height: 4rem;
+    }
+
+    .project {
+        margin: 0 auto;
+        width: 60%;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav id="navigation">
+
+                <div class="logo">
+
+                    <img src="images/logo2.png" alt="Logo Marco web development">
+                </div>
+
+                <nav id="navigation-phone">
+                    <ul class="hamburger">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    <div class="tracker"></div>
+                    <ul class="menu">
+                        <li class="list"><a>About</a></li>
+                        <li class="list"><a>Portfolio</a></li>
+                        <li class="list"><a>Resume</a></li>
+                        <li class="list"><a>Contact</a></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                    </ul>
                 </nav>
-                <div class="phone">
-                    <ul class="munuSmall">
-                        <li><a class="color-blue">About</a></li>
-                        <li><a class="color-blue">Portfolio</a></li>
-                        <li><a class="color-blue">Resume</a></li>
-                        <li><a class="color-blue">Contact</a></li>
+
+            </nav>
+            <div class="phone">
+                <ul class="munuSmall">
+                    <li><a class="color-blue">About</a></li>
+                    <li><a class="color-blue">Portfolio</a></li>
+                    <li><a class="color-blue">Resume</a></li>
+                    <li><a class="color-blue">Contact</a></li>
+                </ul>
+                <ul class="social">
+                    <li class="icons"><a href=""><i class="fa fa-stack-overflow"></i></a></li>
+                    <li class="icons"><a href=""><i class="fa fa-github"></i></a></li>
+                    <li class="icons"><a href=""><i class="fa fa-codepen"></i>
+                        </a></li>
+                </ul>
+            </div>
+
+        </header>
+        <section id="about">
+            <div class="cover"></div>
+            <div class="poster">
+
+                <h1 class="parallax">Hello there! I am <span>Marco</span>,<br>
+                    currently crating beutyfull staff in <br>Perth, WA.</h1>
+
+
+            </div>
+            <aside>
+                <h1 class="meself">ABOUT ME</h1>
+                <h2 class="sub-title">This is who I am</h2>
+                <article>
+                    <ul class="about">
+                        <li><img src="images/clock.svg" alt="">
+                            <h2 class="sub-title">Fast learner</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui
+                                repellendus!</p>
+                        </li>
+                        <li><img src="images/commited.svg" alt="">
+                            <h2 class="sub-title">Fast learner</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui
+                                repellendus!</p>
+                        </li>
+                        <li><img src="images/Attention.svg" alt="">
+                            <h2 class="sub-title">Fast learner</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui
+                                repellendus!</p>
+                        </li>
+
                     </ul>
-                    <ul class="social">
-                        <li class="icons"><a href=""><i class="fa fa-stack-overflow"></i></a></li>
-                        <li class="icons"><a href=""><i class="fa fa-github"></i></a></li>
-                        <li class="icons"><a href=""><i class="fa fa-codepen"></i>
-                            </a></li>
+                </article>
+
+
+            </aside>
+        </section>
+        <section id="portfolio">
+            <h2 class="page-title">Projects</h2>
+            <div class="container-portfolio">
+                <div class="container-project">
+                    <div class="flex-project">
+                        <img src="images/e-commerce.png" alt="icons for the project">
+                        <h5><a href="#">e-commerce</a></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusantium, doloremque nemo
+                            facilis tenetur eos debitis consectetur, iusto deserunt soluta quos laudantium rerum!
+                            sumenda porro repellat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusantium, doloremque nemo
+                            facilis tenetur eos debitis consectetur, iusto deserunt soluta quos laudantium rerum!
+                            sumenda porro repellat.</p>
+                        <button class="btn-project">check this out!</button>
+                    </div>
+                    <div class="flex-project">
+                        <img src="images/login.png" alt="icons for the project">
+                        <h5><a href="#">login-system</a></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore optio vero expedita
+                            exercitationem doloremque est, dolor sequi rerum accusantium voluptatum! Aliquam quaerat, ue
+                            neque cum laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusantium, doloremque nemo
+                            facilis tenetur eos debitis consectetur, iusto deserunt soluta quos laudantium rerum!
+                            sumenda porro repellat.</p>
+                        <button class="btn-project">check this out!</button>
+                    </div>
+                    <div class="flex-project">
+                        <img src="images/INDUCTION.png" alt="icons for the project">
+                        <h5><a href="#">WHS induction</a></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur, qui. Enim
+                            doloremque cumque quo accusamus recusandae, nobis, porro odit nihil aut sed corporis </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusantium, doloremque nemo
+                            facilis tenetur eos debitis consectetur, iusto deserunt soluta quos laudantium rerum!
+                            sumenda porro repellat.</p>
+                        <button class="btn-project">check this out!</button>
+                    </div>
+                </div>
+            </div>
+            <!--   responsive             -->
+            <div class="projects">
+                <div class="project-container">
+                    <div class="overlay">
+                        <h4><a href="#">E-coomerce</a></h4>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="overlay">
+                        <h4><a href="#">Login-system</a></h4>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="overlay">
+                        <h4><a>WHS Induction</a></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2 class="page-title">Resume</h2>
+            <div class="container-resume">
+                <a href="https://www.dtwd.wa.gov.au/" target="_blank" rel="noopener">
+                    <P class="tafe">Currently studing at TAFE, WA</P>
+                </a>
+                <div class="table-of-content">
+
+
+                    <ul class="subjects">
+
+                        <li class="tab" style="background-color: #ebebeb; color:#000;">ux design</li>
+                        <li class="tab">digital layout</li>
+                        <li class="tab animation">html</li>
+                        <li class="tab animation">css</li>
+                        <li class="tab animation">javascript</li>
+
                     </ul>
-                </div>
 
-            </header> 
-            <section id="about">
-                <div class="cover"></div>
-                <div class="poster">
+                    <div class="skill-contents">
+                        <div class="skill-page" style="z-index: 1;">
+                            <ol>
+                                <li class="semester1">UX DESIGN ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">UX DESIGN ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">UX DESIGN ipsum dolor sit amet, consectetur adipisicing elit.</li>
 
-                    <h1 class="parallax">Hello there! I am <span>Marco</span>,<br>
-                        currently crating beutyfull staff in <br>Perth, WA.</h1>
-
-
-                </div>
-                <aside>
-                    <h1 class="meself">ABOUT ME</h1>
-                    <h2 class="sub-title">This is who I am</h2>
-                    <article>
-                        <ul class="about">
-                            <li><img src="images/clock.svg" alt="">
-                                <h2 class="sub-title">Fast learner</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui repellendus!</p>
-                            </li>
-                            <li><img src="images/commited.svg" alt="">
-                                <h2 class="sub-title">Fast learner</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui repellendus!</p></li>
-                            <li><img src="images/Attention.svg" alt="">
-                                <h2 class="sub-title">Fast learner</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui repellendus!</p></li>
-
-                        </ul>
-                    </article>
-
-
-                </aside>
-            </section>
-            <section id="portfolio">
-                <h2 class="page-title">Projects</h2>
-                <div class="container-portfolio">
-                    <div class="container-project">
-                        <div class="flex-project">
-                            <img src="images/e-commerce.png" alt="icons for the project"> <h5><a href="#">e-commerce</a></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusantium, doloremque nemo facilis tenetur eos debitis consectetur, iusto deserunt soluta quos laudantium rerum! sumenda porro repellat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusantium, doloremque nemo facilis tenetur eos debitis consectetur, iusto deserunt soluta quos laudantium rerum! sumenda porro repellat.</p>
-                            <button class="btn-project">check this out!</button>
+                            </ol>
                         </div>
-                        <div class="flex-project">
-                            <img src="images/login.png" alt="icons for the project"> <h5><a href="#">login-system</a></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore optio vero expedita exercitationem doloremque est, dolor sequi rerum accusantium voluptatum! Aliquam quaerat, ue neque cum laborum.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusantium, doloremque nemo facilis tenetur eos debitis consectetur, iusto deserunt soluta quos laudantium rerum! sumenda porro repellat.</p>
-                            <button class="btn-project">check this out!</button>
+                        <div class="skill-page">
+                            <ol>
+                                <li class="semester1">DIGITAL DESIGN ipsum dolor sit amet, consectetur adipisicing elit.
+                                </li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            </ol>
                         </div>
-                        <div class="flex-project">
-                            <img src="images/INDUCTION.png" alt="icons for the project"> <h5><a href="#">WHS induction</a></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur, qui. Enim doloremque cumque quo accusamus recusandae, nobis, porro odit nihil aut sed corporis </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusantium, doloremque nemo facilis tenetur eos debitis consectetur, iusto deserunt soluta quos laudantium rerum! sumenda porro repellat.</p>
-                            <button class="btn-project">check this out!</button>
+                        <div class="skill-page">
+                            <ol>
+                                <li class="semester1">HTML ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            </ol>
                         </div>
-                    </div>
-                </div>
-                <!--   responsive             -->
-                <div class="projects">
-                    <div class="project-container">
-                        <div class="overlay">
-                            <h4><a href="#">E-coomerce</a></h4>
+                        <div class="skill-page">
+                            <ol>
+                                <li class="semester1">CSS ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            </ol>
+                        </div>
+
+
+
+                        <div class="skill-page">
+                            <ol>
+                                <li class="semester1">JAVASCRIPT ipsum dolor sit amet, consectetur adipisicing elit.
+                                </li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            </ol>
                         </div>
                     </div>
-                    <div class="project-container">
-                        <div class="overlay">
-                            <h4><a href="#">Login-system</a></h4>
-                        </div>
-                    </div>
-                    <div class="project-container">
-                        <div class="overlay"><h4><a>WHS Induction</a></h4>
-                        </div>
-                    </div>
+
                 </div>
-            </section>
 
-            <section id="resume">
-                <h2 class="page-title">Resume</h2>
-                <div class="container-resume">
-                    <a href="https://www.dtwd.wa.gov.au/" target="_blank" rel="noopener" > <P class="tafe">Currently studing at TAFE, WA</P></a>
-                    <div class="table-of-content">
+            </div>
 
 
-                        <ul class="subjects">
+        </section>
+        <section id="contact">
+            <h2 class="page-title">Contact</h2>
+            <div class="container-form">
 
-                            <li class="tab" style="background-color: #ebebeb; color:#000;">ux design</li>
-                            <li class="tab">digital layout</li>
-                            <li class="tab animation">html</li>
-                            <li class="tab animation">css</li>
-                            <li class="tab animation">javascript</li>
+                <form action="post" id="form">
+                    <h2 class="form-title">Contact me</h2>
+                    <div class="input-section">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" required>
+                        <div id="n-msg"></div> <br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required><div id="e-msg"></div><br>
 
-                        </ul>
+                        <label for="question">Message</label><br>
+                        <textarea name="question" id="question" cols="20" rows="10" required></textarea><br>
 
-                        <div class="skill-contents">
-                            <div class="skill-page" style="z-index: 1;">
-                                <ol>
-                                    <li class="semester1">UX DESIGN ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">UX DESIGN ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">UX DESIGN ipsum dolor sit amet, consectetur adipisicing elit.</li>
-
-                                </ol>
-                            </div>
-                            <div class="skill-page">
-                                <ol>
-                                    <li class="semester1">DIGITAL DESIGN ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                </ol>
-                            </div>
-                            <div class="skill-page">
-                                <ol>
-                                    <li class="semester1">HTML ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                </ol>
-                            </div>
-                            <div class="skill-page">
-                                <ol>
-                                    <li class="semester1">CSS ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                </ol>
-                            </div>
-
-
-
-                            <div class="skill-page">
-                                <ol>
-                                    <li class="semester1">JAVASCRIPT ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="semester1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                </ol>
-                            </div>
-                        </div>
+                        <input type="checkbox" id="term" name="term">
+                        <label for="term">Accept term and condition</label><br>
 
                     </div>
+<!-- reCAPTCHA here -->
+                    <button class="form-submission" id="submit-form">get in touch</button>
+                </form>
+
+                <iframe title="my current location" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCH4a305s_0JTY3kIEJtea-xrYy52dss1k
+                                 &q=-31.950988 115.872739" allowfullscreen>
+                </iframe>
+
+            </div>
+
+
+        </section>
+        <footer>
+
+
+            <div class="sitemap-item">
+                <h2 class="sitemap-title">Currently studing</h2>
+                <article class="sitemap-content">
+                    <p class="address">
+                        <span class="cool-stuff">Cool stuff at:</span> <br>
+                        <a href="https://www.northmetrotafe.wa.edu.au/courses/diploma-website-development"
+                            target="_blank" rel="noopener">North Metropolitan TAFE. <br>
+                            33 Aberdeen Street, Perth, Western Australia.</a>
+                    </p>
+                    <a href="https://www.northmetrotafe.wa.edu.au/courses/diploma-website-development" target="_blank"
+                        rel="noopener">
+                        <img src="images/w.svg" alt="logo north metroplitan tafe" class="North-Metropolitan">
+                    </a>
+                </article>
+            </div>
+            <div class="sitemap-item">
+                <h2 class="sitemap-title">Technologies that I am confident with</h2>
+                <article class="sitemap-content">
+                    <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener"><img
+                            src="images/html5.svg" alt="logo html5" class="logos"></a>
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener"><img
+                            src="images/css3.svg" alt="logo css3" class="logos"></a>
+                    <a href="https://www.javascript.com/learn/strings" target="_blank" rel="noopener"><img
+                            src="images/javascript.svg" alt="logo javascript" class="logos"></a>
+                    <a href="https://reactjs.org/" target="_blank" rel="noopener"><img src="images/react.svg"
+                            alt="logo react" class="logos"></a>
+                    <a href="https://jquery.com/" target="_blank" rel="noopener"><img src="images/jquery.svg"
+                            alt="logo jquery" class="logos"></a>
+                    <a href="https://www.adobe.com/au/products/photoshop.html" target="_blank" rel="noopener"><img
+                            src="images/adobephotoshop.svg" alt="logo photoshop" class="logos"></a>
+                    <a href="https://www.adobe.com/au/products/illustrator.html" target="_blank" rel="noopener"><img
+                            src="images/adobeillustrator.svg" alt="logo illustrator" class="logos"></a>
+                    <a href="https://www.adobe.com/au/products/xd.html" target="_blank" rel="noopener"><img
+                            src="images/adobexd.svg" alt="logo xd" class="logos"></a>
+                    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener"><img
+                            src="images/visualstudiocode.svg" alt="logo visual studio code" class="logos"></a>
+                    <a href="https://www.apple.com/" target="_blank" rel="noopener"><img src="images/apple.svg"
+                            alt="logo apple" class="logos"></a>
+
+                </article>
+            </div>
+
+            <div class="sitemap-item">
+                <h2 class="sitemap-title">I am also interested in</h2>
+                <article class="sitemap-content">
+                    <a href="https://git-scm.com/" target="_blank" rel="noopener"><img src="images/git.svg"
+                            alt="logo git" class="logos"></a>
+                    <a href="https://www.mongodb.com/" target="_blank" rel="noopener"><img src="images/mongodb.svg"
+                            alt="logo mango db" class="logos"></a>
+                    <a href="https://angular.io/" target="_blank" rel="noopener"><img src="images/angular.svg"
+                            alt="logo angular" class="logos"></a>
+                    <a href="https://nodejs.org/en/" target="_blank" rel="noopener"><img src="images/node-dot-js.svg"
+                            alt="logo node js" class="logos"></a>
+                    <a href="https://www.php.net/" target="_blank" rel="noopener"> <img src="images/php.svg"
+                            alt="logo php" class="logos"></a>
+                    <a href="https://get.webgl.org/" target="_blank" rel="noopener"><img src="images/webgl.svg"
+                            alt="logo webgl" class="logos"></a>
+                    <a href="https://coffeescript.org/" target="_blank" rel="noopener"><img
+                            src="images/coffeescript.svg" alt="logo coffeescript" class="logos"></a>
+                    <a href="https://www.python.org/" target="_blank" rel="noopener"><img src="images/python.svg"
+                            alt="logo python" class="logos"></a>
+                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener"><img
+                            src="images/typescript.svg" alt="logo typescript" class="logos"></a>
+                    <a href="https://www.mysql.com/" target="_blank" rel="noopener"><img src="images/mysql.svg"
+                            alt="logo mysql" class="logos"></a>
+
+
+                </article>
+            </div>
+
+
+
+            <div class="sitemap-item">
+                <h2 class="sitemap-title">Share</h2>
+                <div id="share-buttons">
+
+                    <!-- Buffer -->
+                    <a href="https://bufferapp.com/add?url=https://simplesharebuttons.com&amp;text=Simple Share Buttons"
+                        target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
+                    </a>
+
+                    <!-- Digg -->
+                    <a href="http://www.digg.com/submit?url=https://simplesharebuttons.com" target="_blank"
+                        rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" />
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com"
+                        rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank"
+                        rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                    </a>
+
+                    <!-- Google+ -->
+                    <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank"
+                        rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com"
+                        target="_blank" rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                    </a>
+
+                    <!-- Pinterest -->
+                    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"
+                        rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+                    </a>
+
+                    <!-- Print -->
+                    <a href="javascript:;" onclick="window.print()">
+                        <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" rel="noopener" />
+                    </a>
+
+                    <!-- Reddit -->
+                    <a href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons"
+                        target="_blank" rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+                    </a>
+
+                    <!-- StumbleUpon-->
+                    <a href="http://www.stumbleupon.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons"
+                        target="_blank" rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" />
+                    </a>
+
+                    <!-- Tumblr-->
+                    <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons"
+                        target="_blank" rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons"
+                        target="_blank" rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                    </a>
+
+                    <!-- VK -->
+                    <a href="http://vkontakte.ru/share.php?url=https://simplesharebuttons.com" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/vk.png" alt="VK" rel="noopener" />
+                    </a>
+
+                    <!-- Yummly -->
+                    <a href="http://www.yummly.com/urb/verify?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons"
+                        target="_blank" rel="noopener">
+                        <img src="https://simplesharebuttons.com/images/somacro/yummly.png" alt="Yummly" />
+                    </a>
 
                 </div>
+            </div>
 
+            <div class="sitemap-item">
+                <h2 class="sitemap-title">Site map</h2>
+                <article class="sitemap-content">
+                    <ul class="sitemap-list">
+                        <li>About</li>
+                        <li>Portfolio</li>
+                        <li>Resume</li>
+                        <li>Contact</li>
+                    </ul>
+                    <ul class="sitemap-icon">
+                        <li><img src="images/so-icon.svg" alt="Stack-overflow logo"></li>
+                        <li><img src="images/github.svg" alt="github logo"></li>
+                        <li><img src="images/codepen.svg" alt="codepen logo"></li>
+                    </ul>
+                </article>
+            </div>
 
-            </section>
-            <section id="contact">
-                <h2 class="page-title">Contact</h2>
-                <div class="container-form">
-
-                    <form action="#" id="form">
-                        <h2 class="form-title">Contact me</h2>
-                        <div class="input-section">
-                            <label for="name">Name</label><br>
-                            <input type="text" id="name" name="name" required><br>
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email" required><br>
-
-                            <label for="question">Message</label><br>
-                            <textarea name="question" id="question" cols="20" rows="10" required></textarea><br>
-
-                            <input type="checkbox" id="term" name="term">
-                            <label for="term">Accept term and condition</label><br>
-
-                        </div>
-                        <div class="img-section">
-                            <img src="images/question.svg" alt="qestion marck icon" class="form-img">
-                        </div>
-                        <button class="form-submission">get in touch</button>
-                    </form>
-
-                    <iframe
-                            title="my current location"
-                            frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCH4a305s_0JTY3kIEJtea-xrYy52dss1k
-                                 &q=-31.950988 115.872739"
-                            allowfullscreen>
-                    </iframe> 
-
-                </div>
-
-
-            </section>
-            <footer>
-
-
-                <div class="sitemap-item">
-                    <h2 class="sitemap-title">Currently studing</h2>
-                    <article class="sitemap-content">
-                        <p class="address">
-                            <span class="cool-stuff">Cool stuff at:</span> <br>
-                            <a href="https://www.northmetrotafe.wa.edu.au/courses/diploma-website-development" target="_blank" rel="noopener">North Metropolitan TAFE. <br>
-                                33 Aberdeen Street, Perth, Western Australia.</a>
-                        </p>
-                        <a href="https://www.northmetrotafe.wa.edu.au/courses/diploma-website-development" target="_blank" rel="noopener">
-                            <img src="images/w.svg" alt="logo north metroplitan tafe"  class="North-Metropolitan">
-                        </a>
-                    </article>
-                </div>
-                <div class="sitemap-item">
-                    <h2 class="sitemap-title">Technologies that I am confident with</h2>
-                    <article class="sitemap-content">
-                        <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener"><img src="images/html5.svg" alt="logo html5" class="logos"></a>
-                        <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener"><img src="images/css3.svg" alt="logo css3" class="logos"></a>
-                        <a href="https://www.javascript.com/learn/strings" target="_blank" rel="noopener"><img src="images/javascript.svg" alt="logo javascript" class="logos"></a>
-                        <a href="https://reactjs.org/" target="_blank" rel="noopener"><img src="images/react.svg" alt="logo react" class="logos"></a>
-                        <a href="https://jquery.com/" target="_blank" rel="noopener"><img src="images/jquery.svg" alt="logo jquery" class="logos"></a>
-                        <a href="https://www.adobe.com/au/products/photoshop.html" target="_blank" rel="noopener"><img src="images/adobephotoshop.svg" alt="logo photoshop" class="logos"></a>
-                        <a href="https://www.adobe.com/au/products/illustrator.html" target="_blank" rel="noopener"><img src="images/adobeillustrator.svg" alt="logo illustrator" class="logos"></a>
-                        <a href="https://www.adobe.com/au/products/xd.html" target="_blank" rel="noopener"><img src="images/adobexd.svg" alt="logo xd" class="logos"></a>
-                        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener"><img src="images/visualstudiocode.svg" alt="logo visual studio code" class="logos"></a>
-                        <a href="https://www.apple.com/" target="_blank" rel="noopener"><img src="images/apple.svg" alt="logo apple" class="logos"></a>
-
-                    </article>
-                </div>
-
-                <div class="sitemap-item">
-                    <h2 class="sitemap-title">I am also interested in</h2>
-                    <article class="sitemap-content">
-                        <a href="https://git-scm.com/" target="_blank" rel="noopener"><img src="images/git.svg" alt="logo git" class="logos"></a>
-                        <a href="https://www.mongodb.com/" target="_blank" rel="noopener"><img src="images/mongodb.svg" alt="logo mango db" class="logos"></a>
-                        <a href="https://angular.io/" target="_blank" rel="noopener"><img src="images/angular.svg" alt="logo angular" class="logos"></a>
-                        <a href="https://nodejs.org/en/" target="_blank" rel="noopener"><img src="images/node-dot-js.svg" alt="logo node js" class="logos"></a>
-                        <a href="https://www.php.net/" target="_blank" rel="noopener"> <img src="images/php.svg" alt="logo php" class="logos"></a>
-                        <a href="https://get.webgl.org/" target="_blank" rel="noopener"><img src="images/webgl.svg" alt="logo webgl" class="logos"></a>
-                        <a href="https://coffeescript.org/" target="_blank" rel="noopener"><img src="images/coffeescript.svg" alt="logo coffeescript" class="logos"></a>
-                        <a href="https://www.python.org/" target="_blank" rel="noopener"><img src="images/python.svg" alt="logo python" class="logos"></a>
-                        <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener"><img src="images/typescript.svg" alt="logo typescript" class="logos"></a>
-                        <a href="https://www.mysql.com/" target="_blank" rel="noopener"><img src="images/mysql.svg" alt="logo mysql" class="logos"></a>
-
-
-                    </article>
-                </div>
+            <div class="sitemap-item">
+                <h2 class="sitemap-title">Leave a comment</h2>
+                <label for="name-footer">Name</label><br>
+                <input type="text" id="name-footer" name="name-footer"><br>
+                <label for="email-footer">Email</label><br>
+                <input type="email" id="email-footer" name="email-footer"><br>
+                <button>Drop the message</button>
+            </div><br>
 
 
 
-                <div class="sitemap-item">
-                    <h2 class="sitemap-title">Share</h2>
-                    <div id="share-buttons">
+        </footer>
+        <h1 class="project">Project by: Marco Cavani in collaboration with <a
+                href="https://www.tafeinternational.wa.edu.au/" target="_blank" rel="noopener">TAFE, WA</a> </h1>
 
-                        <!-- Buffer -->
-                        <a href="https://bufferapp.com/add?url=https://simplesharebuttons.com&amp;text=Simple Share Buttons" target="_blank">
-                            <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
-                        </a>
-
-                        <!-- Digg -->
-                        <a href="http://www.digg.com/submit?url=https://simplesharebuttons.com" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" />
-                        </a>
-
-                        <!-- Email -->
-                        <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
-                        </a>
-
-                        <!-- Facebook -->
-                        <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-                        </a>
-
-                        <!-- Google+ -->
-                        <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
-                        </a>
-
-                        <!-- LinkedIn -->
-                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
-                        </a>
-
-                        <!-- Pinterest -->
-                        <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
-                        </a>
-
-                        <!-- Print -->
-                        <a href="javascript:;" onclick="window.print()">
-                            <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" rel="noopener" />
-                        </a>
-
-                        <!-- Reddit -->
-                        <a href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
-                        </a>
-
-                        <!-- StumbleUpon-->
-                        <a href="http://www.stumbleupon.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" />
-                        </a>
-
-                        <!-- Tumblr-->
-                        <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
-                        </a>
-
-                        <!-- Twitter -->
-                        <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-                        </a>
-
-                        <!-- VK -->
-                        <a href="http://vkontakte.ru/share.php?url=https://simplesharebuttons.com" target="_blank">
-                            <img src="https://simplesharebuttons.com/images/somacro/vk.png" alt="VK" rel="noopener" />
-                        </a>
-
-                        <!-- Yummly -->
-                        <a href="http://www.yummly.com/urb/verify?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank" rel="noopener">
-                            <img src="https://simplesharebuttons.com/images/somacro/yummly.png" alt="Yummly" />
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="sitemap-item">
-                    <h2 class="sitemap-title">Site map</h2>
-                    <article class="sitemap-content">
-                        <ul class="sitemap-list">
-                            <li>About</li>
-                            <li>Portfolio</li>
-                            <li>Resume</li>
-                            <li>Contact</li>
-                        </ul>
-                        <ul class="sitemap-icon">
-                            <li><img src="images/so-icon.svg" alt="Stack-overflow logo"></li>
-                            <li><img src="images/github.svg" alt="github logo"></li>
-                            <li><img src="images/codepen.svg" alt="codepen logo"></li>
-                        </ul>
-                    </article>
-                </div>
-
-                <div class="sitemap-item">
-                    <h2 class="sitemap-title">Leave a comment</h2>
-                    <label for="name-footer">Name</label><br>
-                    <input type="text" id="name-footer" name="name-footer"><br>
-                    <label for="email-footer">Email</label><br>
-                    <input type="email" id="email-footer" name="email-footer"><br>
-                    <button>Drop the message</button>
-                </div><br>
-
-
-
-            </footer>
-            <h1 class="project">Project by: Marco Cavani in collaboration with <a href="https://www.tafeinternational.wa.edu.au/" target="_blank" rel="noopener">TAFE, WA</a> </h1>
-
-        </div>
-        <script src="js/scroll.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-        <script src="js/services.js"></script>
-        <script src="js/resume.js"></script>
-
-    </body>
+    </div>
+    <script src="js/scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/resume.js"></script>
+    <script src="js/formValidation.js"></script>
+</body>
 
 
 

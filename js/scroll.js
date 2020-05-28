@@ -260,6 +260,17 @@ function init(){
         });
 
     }
+// form initialization
+     submitButton.disabled = true;
+     U.addEvent(term, "change", submitionAbilitated);
+     U.addEvent(name, "input", validateName);
+     U.addEvent(email, "input", validateEmail);
+     U.addEvent(form, "submit", function(e){
+        submition(e);
+       
+     })
+
+
 }
 
 
@@ -290,5 +301,6 @@ window.onscroll = function() {
 };
 
 window.onload = function(event){
+    
     init();
 }
