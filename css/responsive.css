@@ -156,10 +156,7 @@
 }
 @media only screen and (max-width: 900px){
     p.tafe{
-        margin: 0 auto;
-        height: inherit;
-        margin-bottom: 0rem;
-        margin-top: 4rem;
+       
 
     }
 }
