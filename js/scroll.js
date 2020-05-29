@@ -274,32 +274,32 @@ function init(){
 }
 
 
-window.onscroll = function() {
-
-    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
-
-    if (currentScroll > 0 && lastScroll <= currentScroll){
-        lastScroll = currentScroll;
-        if(currentScroll > section.offsetHeight -10){
-
-            gsap.to(navigationBar, {
-                duration:1, top: '-10rem', delay:0,ease:'elastic',
-            });       
-        }
-    }else{
-        lastScroll = currentScroll;
-        if(currentScroll){
-            navigationBar.style.position = 'fixed';
-        }else{
-            navigationBar.style.position = 'absolute';
-        }
-
-        gsap.to(navigationBar, {
-            duration:1, top: '0rem', delay:0,ease:'elastic',
-        });        
-    }
-};
-
+//window.onscroll = function() {
+//
+//    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+//
+//    if (currentScroll > 0 && lastScroll <= currentScroll){
+//        lastScroll = currentScroll;
+//        if(currentScroll > section.offsetHeight -10){
+//
+//            gsap.to(navigationBar, {
+//                duration:1, top: '-10rem', delay:0,ease:'elastic',
+//            });       
+//        }
+//    }else{
+//        lastScroll = currentScroll;
+//        if(currentScroll){
+//            navigationBar.style.position = 'fixed';
+//        }else{
+//            navigationBar.style.position = 'absolute';
+//        }
+//
+//        gsap.to(navigationBar, {
+//            duration:1, top: '0rem', delay:0,ease:'elastic',
+//        });        
+//    }
+//};
+//
 window.onload = function(event){
     
     init();

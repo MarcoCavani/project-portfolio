@@ -49,7 +49,7 @@ section{
     width: 100%;
     max-width:1400px;
     margin: auto;
-    position:absolute;
+    position:fixed;
     background-color: #ebebeb;
     z-index: 1003;
     padding: 0rem 15rem 0rem 15rem;
