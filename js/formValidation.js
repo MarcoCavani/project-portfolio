@@ -26,6 +26,7 @@ if(term.checked){
     submitButton.disabled = false;
 }
 function validationMarck(s, value, color) {
+    "use strict";
     if (value == "name") {
         let msg = U.$('n-msg');
         msg.innerText = s;
@@ -40,10 +41,12 @@ function validationMarck(s, value, color) {
 }
 
 function submitionAbilitated() {
+     "use strict";
     submitButton.disabled = false;
     
 }
 function submition(e){
+     "use strict";
    if (validateName() == false && validateEmail() == false){
     term.checked = false;
    }else{
@@ -51,6 +54,7 @@ function submition(e){
    } 
 }
 function validateName() {
+     "use strict";
     if (/^[A-Z \.\-']{2,20}$/i.test(name.value)) {
         name.style.border = "1px solid green";
         validationMarck('✔', 'name', 'green');
@@ -63,6 +67,7 @@ function validateName() {
     return error;
 }
 function validateEmail() {
+     "use strict";
     if (/^[\w.-]+@[\w.-]+\.[A-Za-z]{2,6}$/.test(email.value)) {
         email.style.border = "1px solid green";
         validationMarck('✔', 'email', "green");
