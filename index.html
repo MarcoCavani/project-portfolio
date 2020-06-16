@@ -12,309 +12,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="description" content="This website is portfolio about web development and design">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/services.css">
+        <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/resume.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="shortcut icon" href="images/logo2.png" />
         <title>Marco web development</title>
     </head>
-    <style>
-        #n-msg, #e-msg {
-            display: inline;
-
-        }
-
-        .tafe {
-
-            color: #cc33cc;
-            font-size: 2rem;
-            height: 0;
-            width: 30rem;
-            margin: 2rem 5rem;
-
-        }
-
-        .tafe:after {
-            content: url(images/dtwd-logo.svg);
-        }
-
-        .container-form {
-            width: 100%;
-            height: calc(100% - 12rem);
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            border: 1px solid gray;
-            justify-content: space-around;
-            padding: 10rem;
-        }
-
-
-        aside h4 {
-            width: 100%;
-            text-align: center;
-            font-size: 2rem;
-            color: #3366cc;
-
-        }
-
-        article ul.about {
-            display: flex;
-            margin-top: 2rem;
-            height: 18rem;
-        }
-
-        article ul.about li {
-            flex-basis: 33.3%;
-            padding: 1rem;
-        }
-
-        ul.about li img {
-            height: 5rem;
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        ul.about li img~p {
-            text-align: center;
-            font-size: 1.3rem;
-            color: #4c4c4cd1;
-            font-weight: lighter;
-            font-style: italic;
-            font-family: "Helvetica", sans-serif;
-        }
-
-        h1.meself {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #3a76ed;
-            font-weight: bold;
-
-
-
-
-        }
-
-        h2.sub-title {
-            text-align: center;
-            font-size: 1.5rem;
-            color: #4c4c4cd1;
-            font-family: "Helvetica", sans-serif;
-            font-weight: bold;
-        }
-
-        h2.page-title {
-            font-size: 1.5rem;
-            font-size: 2.5rem;
-            color: #3a76ed;
-            font-weight: bold;
-        }
-
-        h2.page-title::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            margin-top: 5rem;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 20px solid #cccccc;
-            clear: both;
-        }
-
-
-        iframe {
-            flex-basis: 50%;
-            margin: 0 auto;
-
-
-        }
-
-        #form {
-            flex-basis: 40%;
-            margin: 0 auto;
-            border: 1px solid grey;
-        }
-
-        footer {
-            display: flex;
-            flex-direction: row;
-            background-color: #ebebeb;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding-top: 2rem;
-
-        }
-
-        .sitemap-item {
-            flex-basis: 26%;
-            margin-bottom: 2rem;
-            margin: 0rem 2rem;
-
-
-        }
-
-        .sitemap-title {
-            font-size: 1.8rem;
-            color: #3366cc;
-            margin-bottom: 2rem;
-
-        }
-
-        .sitemap-title::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            margin-top: .8rem;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-top: 10px solid #cccccc;
-            clear: both;
-        }
-
-        .sitemap-content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .sitemap-icon {
-            clear: both;
-
-        }
-
-        .sitemap-icon li {
-            display: inline;
-            font-family: "Helvetica", sans-serif;
-
-        }
-
-        .sitemap-icon li img {
-            height: 3rem;
-            width: 3rem;
-
-        }
-
-        p.address {
-            font-size: 1.5rem;
-            color: #cccccc;
-            font-family: "Helvetica", sans-serif;
-        }
-
-        p.address a {
-            font-size: 1.5rem;
-            color: #000;
-            font-family: "Helvetica", sans-serif;
-        }
-
-        .logos {
-            height: 4rem;
-            width: 4rem;
-            margin: .2rem;
-
-        }
-
-        .North-Metropolitan {
-            height: 4rem;
-
-        }
-
-        .cool-stuff {
-            color: #5b5b5b;
-            font-size: 2rem;
-        }
-
-
-        .input-section {
-            width: 90%;
-            float: left;
-            padding: 1rem;
-            height: calc(100% - 12rem);
-
-        }
-
-        #question {
-            margin: 0rem 1rem;
-            width: 60%;
-            border: 2px solid grey;
-            font-size: 1.4rem;
-        }
-        /* 
-        .img-section {
-        float: right;
-        width: 10%;
-        height: calc(100% - 12rem);
-        display: flex;
-        justify-content: center;
-        border: 1rem solid black;
-
-        }
-
-        .img-section img {
-        height: 0%;
-        margin: auto;
-        } */
-
-        .form-title {
-            text-align: center;
-            color: #ebebeb;
-            font-size: 2rem;
-            height: 6rem;
-            line-height: 6rem;
-            background-color: #3366cc;
-        }
-
-        button.form-submission {
-            clear: both;
-            background-color: #3366cc;
-            text-align: center;
-            color: white;
-            width: 100%;
-            font-size: 2rem;
-            height: 6rem;
-        }
-
-        #name,
-        #email {
-            margin: 0rem 1rem;
-            height: 2.5rem;
-            font-size: 1.4rem;
-            width: 60%;
-            border: 1px solid grey;
-        }
-
-        .input-section>label {
-            font-size: 1.5rem;
-            color: #000;
-        }
-
-        .input-section>label:after {
-            content: "*";
-            color: red;
-        }
-
-
-        input[type="checkbox"] {
-            height: 1.5rem;
-            width: 1.5rem;
-            margin: 0rem 1rem;
-        }
-
-        label [for="term"] {
-            font-size: 1.2rem;
-        }
-
-        #share-buttons img {
-            height: 4rem;
-        }
-
-        .project {
-            margin: 0 auto;
-            width: 60%;
-            text-align: center;
-        }
-    </style>
 
     <body>
         <div id="wrapper">
@@ -339,7 +45,7 @@
                             <li class="list"><a>Portfolio</a></li>
                             <li class="list"><a>Resume</a></li>
                             <li class="list"><a>Contact</a></li>
-                            <li><a style="font-size: 4rem; color: #cc33cc;" href="https://api.whatsapp.com/send?phone=468825323"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=468825323"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 
 
                         </ul>
@@ -376,17 +82,17 @@
                     <h2 class="sub-title">This is who I am</h2>
                     <article>
                         <ul class="about">
-                            <li><img src="images/clock.svg" alt="">
+                            <li><img src="images/clock.png" alt="fast learner icon">
                                 <h2 class="sub-title">Fast learner</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui
                                     repellendus!</p>
                             </li>
-                            <li><img src="images/commited.svg" alt="">
+                            <li><img src="images/commited.png" alt="commited icon">
                                 <h2 class="sub-title">Commited</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui
                                     repellendus!</p>
                             </li>
-                            <li><img src="images/Attention.svg" alt="">
+                            <li><img src="images/Attention.png" alt="meticulous">
                                 <h2 class="sub-title">Meticulous</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis est placeat ea qui
                                     repellendus!</p>
@@ -589,7 +295,7 @@
                         </p>
                         <a href="https://www.northmetrotafe.wa.edu.au/courses/diploma-website-development" target="_blank"
                            rel="noopener">
-                            <img src="images/w.svg" alt="logo north metroplitan tafe" class="North-Metropolitan">
+                            <img src="images/w.png" alt="logo north metroplitan tafe" class="North-Metropolitan">
                         </a>
                     </article>
                 </div>
@@ -597,26 +303,26 @@
                     <h2 class="sitemap-title">Technologies that I am confident with</h2>
                     <article class="sitemap-content">
                         <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener">
-                            <img src="images/html5.svg" alt="logo html5" class="logos">
+                            <img src="images/html5.png" alt="logo html5" class="logos">
                         </a>
                         <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener">
-                            <img src="images/css3.svg" alt="logo css3" class="logos">
+                            <img src="images/css3.png" alt="logo css3" class="logos">
                         </a>
-                        <a href="https://www.javascript.com/learn/strings" target="_blank" rel="noopener"><img src="images/javascript.svg" alt="logo javascript" class="logos">
+                        <a href="https://www.javascript.com/learn/strings" target="_blank" rel="noopener"><img src="images/javascript.png" alt="logo javascript" class="logos">
                         </a>
-                        <a href="https://reactjs.org/" target="_blank" rel="noopener"><img src="images/react.svg" alt="logo react" class="logos">
+                        <a href="https://reactjs.org/" target="_blank" rel="noopener"><img src="images/react.png" alt="logo react" class="logos">
                         </a>
-                        <a href="https://jquery.com/" target="_blank" rel="noopener"><img src="images/jquery.svg" alt="logo jquery" class="logos">
+                        <a href="https://jquery.com/" target="_blank" rel="noopener"><img src="images/jquery.png" alt="logo jquery" class="logos">
                         </a>
-                        <a href="https://www.adobe.com/au/products/photoshop.html" target="_blank" rel="noopener"><img src="images/adobephotoshop.svg" alt="logo photoshop" class="logos">
+                        <a href="https://www.adobe.com/au/products/photoshop.html" target="_blank" rel="noopener"><img src="images/adobephotoshop.png" alt="logo photoshop" class="logos">
                         </a>
-                        <a href="https://www.adobe.com/au/products/illustrator.html" target="_blank" rel="noopener"><img src="images/adobeillustrator.svg" alt="logo illustrator" class="logos">
+                        <a href="https://www.adobe.com/au/products/illustrator.html" target="_blank" rel="noopener"><img src="images/adobeillustrator.png" alt="logo illustrator" class="logos">
                         </a>
-                        <a href="https://www.adobe.com/au/products/xd.html" target="_blank" rel="noopener"><img src="images/adobexd.svg" alt="logo xd" class="logos">
+                        <a href="https://www.adobe.com/au/products/xd.html" target="_blank" rel="noopener"><img src="images/adobexd.png" alt="logo xd" class="logos">
                         </a>
-                        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener"><img src="images/visualstudiocode.svg" alt="logo visual studio code" class="logos">
+                        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener"><img src="images/visualstudiocode.png" alt="logo visual studio code" class="logos">
                         </a>
-                        <a href="https://www.apple.com/" target="_blank" rel="noopener"><img src="images/apple.svg" alt="logo apple" class="logos"></a>
+                        <a href="https://www.apple.com/" target="_blank" rel="noopener"><img src="images/apple.png" alt="logo apple" class="logos"></a>
 
                     </article>
                 </div>
@@ -624,31 +330,31 @@
                 <div class="sitemap-item">
                     <h2 class="sitemap-title">I am also interested in technologies like</h2>
                     <article class="sitemap-content">
-                        <a href="https://git-scm.com/" target="_blank" rel="noopener"><img src="images/git.svg" alt="logo git" class="logos">
+                        <a href="https://git-scm.com/" target="_blank" rel="noopener"><img src="images/git.png" alt="logo git" class="logos">
                         </a>
-                        <a href="https://www.mongodb.com/" target="_blank" rel="noopener"><img src="images/mongodb.svg" alt="logo mango db" class="logos">
-                        </a>
-
-                        <a href="https://angular.io/" target="_blank" rel="noopener"><img src="images/angular.svg" alt="logo angular" class="logos">
+                        <a href="https://www.mongodb.com/" target="_blank" rel="noopener"><img src="images/mongodb.png" alt="logo mango db" class="logos">
                         </a>
 
-                        <a href="https://nodejs.org/en/" target="_blank" rel="noopener"><img src="images/node-dot-js.svg" alt="logo node js" class="logos">
+                        <a href="https://angular.io/" target="_blank" rel="noopener"><img src="images/angular.png" alt="logo angular" class="logos">
                         </a>
 
-                        <a href="https://www.php.net/" target="_blank" rel="noopener"> <img src="images/php.svg" alt="logo php" class="logos">
+                        <a href="https://nodejs.org/en/" target="_blank" rel="noopener"><img src="images/node-dot-js.png" alt="logo node js" class="logos">
                         </a>
 
-                        <a href="https://get.webgl.org/" target="_blank" rel="noopener"><img src="images/webgl.svg" alt="logo webgl" class="logos">
-                        </a>
-                        <a href="https://coffeescript.org/" target="_blank" rel="noopener"><img src="images/coffeescript.svg" alt="logo coffeescript" class="logos">
+                        <a href="https://www.php.net/" target="_blank" rel="noopener"> <img src="images/php.png" alt="logo php" class="logos">
                         </a>
 
-                        <a href="https://www.python.org/" target="_blank" rel="noopener"><img src="images/python.svg" alt="logo python" class="logos">
+                        <a href="https://get.webgl.org/" target="_blank" rel="noopener"><img src="images/webgl.png" alt="logo webgl" class="logos">
+                        </a>
+                        <a href="https://coffeescript.org/" target="_blank" rel="noopener"><img src="images/coffeescript.png" alt="logo coffeescript" class="logos">
                         </a>
 
-                        <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener"><img src="images/typescript.svg" alt="logo typescript" class="logos"></a>
+                        <a href="https://www.python.org/" target="_blank" rel="noopener"><img src="images/python.png" alt="logo python" class="logos">
+                        </a>
 
-                        <a href="https://www.mysql.com/" target="_blank" rel="noopener"><img src="images/mysql.svg" alt="logo mysql" class="logos"></a>
+                        <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener"><img src="images/typescript.png" alt="logo typescript" class="logos"></a>
+
+                        <a href="https://www.mysql.com/" target="_blank" rel="noopener"><img src="images/mysql.png" alt="logo mysql" class="logos"></a>
 
                     </article>
                 </div>
@@ -735,9 +441,9 @@
                     <h2 class="sitemap-title">See me on</h2>
                     <article class="sitemap-content">
                         <ul class="sitemap-icon">
-                            <li><a href="https://stackoverflow.com/?newreg=2cfd1e049d194a3380e92a1c289d8a10"><img src="images/so-icon.svg" alt="Stack-overflow logo"></a></li>
-                            <li><a href="https://github.com/MarcoCavani"><img src="images/github.svg" alt="github logo"></a></li>
-                            <li><a href="https://codepen.io/marco-cavani"><img src="images/codepen.svg" alt="codepen logo"></a></li>
+                            <li><a href="https://stackoverflow.com/?newreg=2cfd1e049d194a3380e92a1c289d8a10"><img src="images/so-icon.png" alt="Stack-overflow logo"></a></li>
+                            <li><a href="https://github.com/MarcoCavani"><img src="images/github.png" alt="github logo"></a></li>
+                            <li><a href="https://codepen.io/marco-cavani"><img src="images/codepen.png" alt="codepen logo"></a></li>
                         </ul>
                     </article>
                 </div>

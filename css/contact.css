@@ -1,0 +1,29 @@
+
+iframe {
+    flex-basis: 50%;
+    margin: 0 auto;
+
+
+}
+
+#form {
+    flex-basis: 40%;
+    margin: 0 auto;
+    border: 1px solid grey;
+}
+#n-msg, #e-msg {
+    display: inline;
+
+}
+
+
+.container-form {
+    width: 100%;
+    height: calc(100% - 12rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    justify-content: space-around;
+    padding: 10rem;
+}

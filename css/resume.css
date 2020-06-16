@@ -1,3 +1,28 @@
+#resume{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ebebeb;
+
+
+
+
+}
+.tafe {
+
+            color: #cc33cc;
+            font-size: 2rem;
+            height: 0;
+            width: 30rem;
+            margin: 2rem 5rem;
+
+        }
+
+        .tafe:after {
+            content: url(../images/dtwd-logo.svg);
+        }
+
 .container-resume{
     width: 100%;
     height: calc(100% - 12rem);
@@ -5,7 +30,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url(../images/connection.svg);
+    background-image: url(../images/connection.png);
     background-size: 2rem;
    
  
