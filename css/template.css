@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    header, section{
+        text-align: center;
+        margin: 100px;
+        font-family: "Helvetica", serif;
+    }
+    
+
+

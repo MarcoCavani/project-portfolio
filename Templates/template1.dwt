@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+
+<link href="../css/template.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header><a href="index.html" class="home"><img src="images/home.png" alt="Home icon"></a> </header>
+<!-- TemplateBeginEditable name="EditRegion3" -->
+       <section> <a href="index.html" id="logo"> <img src="/images/logo.png" alt="Logo Marco web development"></a>
+         <h1 class="progress">Working in progress...</h1>
+         <a href="index.html">About me</a> </section>
+<!-- TemplateEndEditable -->
+</body>
+</html>
+
+
+
+  
+    

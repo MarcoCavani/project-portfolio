@@ -194,17 +194,18 @@ span{
 
 .btn-project{
     background-color: #3366cc;
-    color: #ebebeb;
     padding: 1rem;
-    font-size: 1.3rem;
     border-radius: 1rem;
     margin:2rem 0rem;
     border: .2rem solid #ebebeb;
     transition: .5s all;
     float: right;
+    color: #ebebeb;
+    font-size: 1.3rem;
 
 }
-button:hover{
+
+.btn-project:hover{
     background-color: #67ca67;
     color:#ebebeb;
 }
