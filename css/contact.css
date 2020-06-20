@@ -1,12 +1,12 @@
 
-iframe, #form{
+#contact iframe, #form{
     flex-basis: 40%;
     height: 50%;
     min-height: 43rem;
 }
 #form {
 
-    margin: 0 auto;
+    
     border: 1px solid grey;
     position: relative
 

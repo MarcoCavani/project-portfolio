@@ -130,16 +130,14 @@ span{
     flex-flow: column;
     justify-content: center;
     border-radius: 1rem;
-    width: 0%;
+    width: 100%;
     text-align: center;
     transition: 0.5s all  ;
 
 
 }
 
-.project-container:hover .overlay {
-    width: 100%;
-}
+
 
 
 .overlay h4 a{
@@ -147,13 +145,10 @@ span{
     position: relative;
     font-size: 2rem;
     font-family: 'Helvetica', sans-serif;
-    opacity: 0;
+    opacity: 1;
 
 }
-.project-container:hover .overlay h4 a{
-    opacity: 1;
-    transition: 1.5s all;
-}
+
 
 
 .overlay a:after{
