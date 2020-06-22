@@ -16,6 +16,12 @@ function pageSet(value){
     });
 
     
+    
+    function portfolioActive(value){
+            page[value].setAttribute('style', 'z-index:' + num + ';');
+            tab[value].style.backgroundColor = '#ebebeb';
+            tab[value].style.color = '#000';
+    }
 
     switch(value.innerHTML){
 
@@ -23,31 +29,24 @@ function pageSet(value){
 
         case 'ux design':
 
-            page[0].setAttribute('style', 'z-index:' + num + ';');
-            tab[0].style.backgroundColor = '#ebebeb';
-            tab[0].style.color = '#000';
+            portfolioActive(0);
 
             break;
         case 'digital layout':
-            page[1].setAttribute('style', 'z-index:' + num + ';');
-            tab[1].style.backgroundColor = '#ebebeb';
-            tab[1].style.color = '#000';
+             portfolioActive(1);
             break;
         case 'html':
-            page[2].setAttribute('style', 'z-index:' + num + ';');
-            tab[2].style.backgroundColor = '#ebebeb';
-            tab[2].style.color = '#000';
+             portfolioActive(2);
             break;
         case 'css':
-            page[3].setAttribute('style', 'z-index:' + num + ';');
-            tab[3].style.backgroundColor = '#ebebeb';
-            tab[3].style.color = '#000';
+             portfolioActive(3);
             break;
         case 'javascript':
-            page[4].setAttribute('style', 'z-index:' + num + ';');
-            tab[4].style.backgroundColor = '#ebebeb';
-            tab[4].style.color = '#000';
+             portfolioActive(4);
             break;
+            
+        case 'PHP':
+            alert('hshshhs');
 
     }
 

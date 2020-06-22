@@ -11,6 +11,8 @@
     font-size: 5rem;
     font-family: 'Roboto Slab', serif; 
 }
+
+
 .page-title{
 
     text-align: center;
@@ -292,16 +294,15 @@ ul.about li img~p {
     font-family: "Helvetica", sans-serif;
 }
 
-h2.meself {
+h2.myself {
     text-align: center;
     font-size: 2.5rem;
     color: #3a76ed;
     font-weight: bold;
-
-
-
+    margin: 1rem;
 
 }
+
 
 h2.sub-title {
     text-align: center;

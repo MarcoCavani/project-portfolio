@@ -16,7 +16,7 @@
     text-align: center;
     justify-content: center;
     background-color: #ebebeb;
-   
+
 
 }
 
@@ -30,15 +30,22 @@ aside{
     z-index: 999;
     margin-top: -25rem;
     border-radius: 1rem;
-    
-    
-        
 
 
 }
-.product{
+aside:before{
 
-
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #cc3366;
+    margin: 0 auto;
+    
+    left: 0;
+    right: 0;
 }
 
 
@@ -55,7 +62,7 @@ span{
 
 
 .container-project{
-    
+
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -66,19 +73,19 @@ span{
 
 
 .flex-project{
-    
+
     padding: 2.5rem;
     flex-basis: 33rem;
     height: 52rem;
     border-radius: 1rem;
-    
+
 
 }
 .flex-project:nth-child(1){
     border: 2px solid #33cc33;
 }
 .flex-project:nth-child(2){
-   border: 2px solid orange;
+    border: 2px solid orange;
 }
 .flex-project:nth-child(3){
     border: 2px solid #cc33cc;
