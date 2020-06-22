@@ -27,26 +27,26 @@ function pageSet(value){
 
 
 
-        case 'ux design':
+        case 'UX Design':
 
             portfolioActive(0);
 
             break;
-        case 'digital layout':
-             portfolioActive(1);
+        case 'Digital Layout':
+            portfolioActive(1);
             break;
-        case 'html':
-             portfolioActive(2);
+        case 'HTML':
+            portfolioActive(2);
             break;
-        case 'css':
-             portfolioActive(3);
+        case 'CSS':
+            portfolioActive(3);
             break;
-        case 'javascript':
-             portfolioActive(4);
+        case 'Javascript':
+            portfolioActive(4);
             break;
             
         case 'PHP':
-            alert('hshshhs');
+            portfolioActive(5);
 
     }
 
