@@ -64,7 +64,7 @@ function validateName() {
         error = false;
     } else {
         name.style.border = "1px solid red";
-        validationMarck('Invalid input', 'name', 'red');
+        validationMarck('✘', 'name', 'red');
         error = true;
     }
     return error;
@@ -77,7 +77,7 @@ function validateEmail() {
         error = false;
     } else {
         email.style.border = "1px solid red";
-        validationMarck('Invalid input', 'email', "red");
+        validationMarck('✘', 'email', "red");
         error = true;
     }
     return error;
