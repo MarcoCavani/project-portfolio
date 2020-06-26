@@ -35,14 +35,14 @@ span{
 main{
     height: 100vh;
     max-width: 1400px;
-    min-height: 75rem;
+    min-height: 80rem;
     background-color: #ebebeb;
 
 }
 /*about*/
 
 #about{
-    min-height: 75rem;
+    
     background-color: #ebebeb;
     display: flex;
     flex-direction: row;
@@ -494,7 +494,7 @@ li{
 /*resume*/
 
 #resume{
-    min-height: 70rem;
+    
     background-color: #ebebeb;
     padding-top: 10rem;
     background-image: url(../images/connection.png);
@@ -595,7 +595,7 @@ li{
 /*portfolio*/
 
 #portfolio{
-    min-height: 70rem;
+   
     background-color: #ebebeb;
     padding-top: 10rem;
 }
@@ -829,25 +829,11 @@ iframe {
 
 #question {
     margin: 0rem 1rem;
-    width: 60%;
+    width: 80%;
     border: 2px solid grey;
     font-size: 1.4rem;
 }
-/* 
-.img-section {
-float: right;
-width: 10%;
-height: calc(100% - 12rem);
-display: flex;
-justify-content: center;
-border: 1rem solid black;
 
-}
-
-.img-section img {
-height: 0%;
-margin: auto;
-} */
 
 .form-title {
     text-align: center;
@@ -873,7 +859,7 @@ button.form-submission {
     margin: 0rem 1rem;
     height: 2.5rem;
     font-size: 1.4rem;
-    width: 60%;
+    width: 80%;
     border: 1px solid grey;
 }
 
@@ -1157,6 +1143,7 @@ label [for="term"] {
 
 .fb-share-button{
     margin-bottom:  1rem;
+    display: block;
 }
 
 
