@@ -1,3 +1,6 @@
+
+
+
 let U = {
     $: function (id) {
         if (typeof (id) == "string") {
@@ -79,4 +82,19 @@ function validateEmail() {
     }
     return error;
 
+}
+function formInit(){
+    // form initialization
+     submitButton.disabled = true;
+     U.addEvent(term, "change", submitionAbilitated);
+     U.addEvent(name, "input", validateName);
+     U.addEvent(email, "input", validateEmail);
+     U.addEvent(form, "submit", function(e){
+        submition(e);
+       
+     })
+}
+window.onload = function(event){
+    
+    formInit();
 }

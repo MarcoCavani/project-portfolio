@@ -123,12 +123,6 @@ function init(){
     });
 
 
-    window.addEventListener('scroll', function(event){
-        scrollTracker(event);
-        titleAnimation(event);
-
-
-    });
 
     for(var i = 0; menu.childElementCount - 1 > i; i++){
 
@@ -141,15 +135,7 @@ function init(){
         });
 
     }
-// form initialization
-     submitButton.disabled = true;
-     U.addEvent(term, "change", submitionAbilitated);
-     U.addEvent(name, "input", validateName);
-     U.addEvent(email, "input", validateEmail);
-     U.addEvent(form, "submit", function(e){
-        submition(e);
-       
-     })
+
 
 
 }
