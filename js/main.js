@@ -127,12 +127,9 @@ function init(){
     for(var i = 0; menu.childElementCount - 1 > i; i++){
 
         menuS.children[i].addEventListener('click', function(event){   
-            menuTracker(event.target);
             menuActive(switcher = false);
         });
-        menu.children[i].addEventListener('click', function(event){
-            menuTracker(event.target);
-        });
+       
 
     }
 
@@ -144,4 +141,5 @@ function init(){
 window.onload = function(event){
     
     init();
+    formInit();
 }

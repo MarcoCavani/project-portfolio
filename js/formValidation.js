@@ -94,7 +94,3 @@ function formInit(){
        
      })
 }
-window.onload = function(event){
-    
-    formInit();
-}
