@@ -28,8 +28,11 @@ span{
 }
 
 #wrapper{
+    
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
+    min-width: 35rem;
 
 }
 main{
@@ -437,14 +440,16 @@ li{
 
 .phone{
     position: fixed;
-    width: 100vw;
-    height: 0vh;
+     max-width: 1400px;
     margin: 0 auto;
-    max-width: 1290px;
+    width: 100%;
+    min-width: 35rem;
+    height: 0vh;
     flex-direction: column;
     justify-content: center;
     z-index: 1000;
     background-color: #ebebeb;
+   
 
 }
 
@@ -1131,7 +1136,12 @@ label [for="term"] {
         margin: 0 auto;    
     }
 }
-
+@media only screen and (max-width: 600px){
+    main#about h1{
+        font-size: 4rem;
+        padding:15rem 0rem;
+    }
+}
 .fb-share-button{
     margin-bottom:  1rem;
     display: block !important;
