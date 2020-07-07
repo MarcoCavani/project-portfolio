@@ -128,15 +128,18 @@ footer {
     background-color: #ebebeb;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 2rem;
+    padding-top: 7rem;
+    width: 70%;
+    margin: 0 auto;
 
 }
 
 .sitemap-item {
     flex-basis: 26%;
-    margin-bottom: 2rem;
-    margin: 0rem 2rem;
+   padding: 1rem;
+    margin: 2rem 2rem;
     min-width: 18rem;
+    
 
 
 }
@@ -274,7 +277,6 @@ h2.page-title::after {
 #navigation-phone{
 
     float: right;
-    display: flex;
     height:70%;
     margin-top: 2rem;
     border-bottom-left-radius: 46px;
