@@ -216,7 +216,7 @@ p.address a {
     width: 70rem;
     margin: 0 auto;
     padding: .5rem 0rem;
-    background-color: #ebebeb;
+    background-color: #fff;
     z-index: 999;
     margin-top: -25rem;
     border-radius: 1rem;
@@ -501,7 +501,7 @@ li{
 
 #resume{
     
-    background-color: #ebebeb;
+   
     padding-top: 10rem;
     background-image: url(../images/connection.png);
     background-size: 2rem;
@@ -531,14 +531,14 @@ li{
     width: 70%;
     display: flex;
     margin: 2rem;
-    background-color: #ebebeb;
+    background-color: none;
     border-radius: 1rem;
 
 
 }
 
 .subjects{
-    background-color: rgba(0, 0, 1, 0.03);
+    background-color: #fff;
     margin: 2.5rem;
 }
 
@@ -564,7 +564,7 @@ li{
     width: 44%;
     position: absolute;
     z-index: 0;
-    background-color: #ebebeb;
+    background-color: #fff;
     overflow: scroll;
     padding: 2.5rem 2.5rem;
 }
@@ -602,7 +602,6 @@ li{
 
 #portfolio{
    
-    background-color: #ebebeb;
     padding-top: 10rem;
 }
 
