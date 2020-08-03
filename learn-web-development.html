@@ -22,20 +22,62 @@
         <title>Marco web development</title>
     </head>
     <style>
-        .btn-about{
-            background-color: #56c0da;
-            padding: .5rem;
+
+
+        #books{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+
+
+
+        .book-cover{
+            margin: 1rem;
+            display: block;
+            width: 15rem;
+            border: 6px solid #4a4a4a52;
             border-radius: 1rem;
-            margin-top: .5rem;
-            border: none;
-
-
+            padding: 1rem;
         }
-        a.btn{
-            color: #fff;
+        .book-img{
+            width: 100%;
+            margin: 1rem 0rem;
+            border: 1px solid;
+        }
+
+        .book-title{
             font-size: 1.5rem;
-            font-family: 'Helvetica', sans-serif;
         }
+
+        .amazon{
+            font-size: 1.3rem;
+            border: .1px solid;
+            border-radius: 0.3rem;
+            padding: .3rem;
+            background-color: #33cc33;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .author{
+            text-decoration: underline;
+            font-size: 1.3rem;
+            
+        }
+        a.author{
+            color: #3366cc;
+        }
+        p.author{
+            text-decoration: none;
+        }
+
+
+
     </style>
     <body>
         <div id="wrapper">
@@ -88,46 +130,79 @@
 
 
 
-            <main id="about">
+            <main id="book">
 
+                <h2 class="page-title">Learn web development:</h2>
 
+                <section id="books">
 
-                <h1 class="parallax">Hello there! I am <span id="name-title">a web developer</span>,<br>
-                    currently designing exciting stuff in <br>Perth, WA.</h1>
+                    <article class="book-cover">
+                        <p class="author">By: <a class="author" href="https://bruno.id/">Bruno Skvorc </a></p>
+                        <h2 class="book-title">Jump Start PHP Environment</h2>
 
+                        <img class="book-img" src="images/php-cover-1.jpg" alt="book cover(Jump Start PHP Environment)">
 
-                <h2 class="myself">ABOUT ME</h2>
-                <h3 class="sub-title">This is who I am</h3>
-                <aside class="bio">
-
-                    <article class="about">
-
-                        <img src="images/clock.png" alt="fast learner icon">
-                        <h2 class="sub-title">Fast learner</h2>
-                        <p>I enjoy grasp new concepts and acquire new technologies.  
-                        </p>
-
-                        <button class="btn-about"><a class="btn" href="learn-web-development.html">Library</a></button>
-                    </article>
-                    <article class="about"><img src="images/commited.png" alt="commited icon">
-                        <h2 class="sub-title">Commited</h2>
-                        <p>I am passionate abaut tackle new challenges and share ideas.
-                        </p>
-                        <button class="btn-about"><a class="btn" href="learn-web-development.html">My Story</a></button>
-                    </article>
-                    <article class="about">
-                        <img src="images/Attention.png" alt="meticulous">
-                        <h2 class="sub-title">Team player</h2>
-                        <p>I enjoy working in new projects that require cooperation.
-                        </p>
-                        <button class="btn-about"><a class="btn" href="learn-web-development.html">Work Ethic</a></button>
-
+                        <a class="amazon" href="https://www.amazon.com/Jump-Start-PHP-Environment-Language/dp/0994182643">Purchase online</a>
                     </article>
 
 
+                   <article class="book-cover">
+                        <p class="author">By: <a class="author" href="https://kevinyank.com/about">kevin Yank</a></p>
+                        <h2 class="book-title">PHP & MySQL: Novice to Ninja</h2>
+
+                        <img class="book-img" src="images/php-cover-2.jpg" alt="book cover(PHP & MySQL: Novice to Ninja)">
+
+                        <a class="amazon" href="https://www.amazon.com/Jump-Start-PHP-Environment-Language/dp/0994182643">Purchase online</a>
+                    </article>
 
 
-                </aside>
+                    <article class="book-cover">
+                        <p class="author">By: <a class="author" href="https://kevinyank.com/about">kevin Yank</a></p>
+                        <h2 class="book-title">PHP & MySQL: Novice to Ninja</h2>
+
+                        <img class="book-img" src="images/JS-book-cover-1.jpg" alt="book cover(PHP & MySQL: Novice to Ninja)">
+
+                        <a class="amazon" href="https://www.amazon.com/Jump-Start-PHP-Environment-Language/dp/0994182643">Purchase online</a>
+                    </article>
+
+
+
+                     <article class="book-cover">
+                        <p class="author">By: <a class="author" href="https://kevinyank.com/about">kevin Yank</a></p>
+                        <h2 class="book-title">PHP & MySQL: Novice to Ninja</h2>
+
+                        <img class="book-img" src="images/php-cover-2.jpg" alt="book cover(PHP & MySQL: Novice to Ninja)">
+
+                        <a class="amazon" href="https://www.amazon.com/Jump-Start-PHP-Environment-Language/dp/0994182643">Purchase online</a>
+                    </article>
+                     <article class="book-cover">
+                        <p class="author">By: <a class="author" href="https://kevinyank.com/about">kevin Yank</a></p>
+                        <h2 class="book-title">PHP & MySQL: Novice to Ninja</h2>
+
+                        <img class="book-img" src="images/php-cover-2.jpg" alt="book cover(PHP & MySQL: Novice to Ninja)">
+
+                        <a class="amazon" href="https://www.amazon.com/Jump-Start-PHP-Environment-Language/dp/0994182643">Purchase online</a>
+                    </article>
+                     <article class="book-cover">
+                        <p class="author">By: <a class="author" href="https://kevinyank.com/about">kevin Yank</a></p>
+                        <h2 class="book-title">PHP & MySQL: Novice to Ninja</h2>
+
+                        <img class="book-img" src="images/php-cover-2.jpg" alt="book cover(PHP & MySQL: Novice to Ninja)">
+
+                        <a class="amazon" href="https://www.amazon.com/Jump-Start-PHP-Environment-Language/dp/0994182643">Purchase online</a>
+                    </article>
+                     <article class="book-cover">
+                        <p class="author">By: <a class="author" href="https://kevinyank.com/about">kevin Yank</a></p>
+                        <h2 class="book-title">PHP & MySQL: Novice to Ninja</h2>
+
+                        <img class="book-img" src="images/php-cover-2.jpg" alt="book cover(PHP & MySQL: Novice to Ninja)">
+
+                        <a class="amazon" href="https://www.amazon.com/Jump-Start-PHP-Environment-Language/dp/0994182643">Purchase online</a>
+                    </article>
+
+
+                </section>
+
             </main>
 
             <footer>

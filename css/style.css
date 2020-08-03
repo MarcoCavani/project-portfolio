@@ -9,6 +9,9 @@
     font-size: 10px;
     cursor: default;
 }
+body{
+        min-width: 47rem;
+}
 
 a{
 
@@ -16,11 +19,11 @@ a{
 }
 li a{
     position: relative;
-    color: #3a76ed;
+    color: #fff;
     font-size: 2rem;
 }
 
-span{
+#name-title{
     font-size: 5rem;
     font-family: 'Roboto Slab', serif; 
     color: #3366cc;
@@ -36,10 +39,14 @@ span{
 
 }
 main{
-    height: 100vh;
+
     max-width: 1400px;
-    min-height: 80rem;
     background-color: #fff;
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+    min-height: calc(100vh - 10rem);
+    
+    
 
 }
 /*about*/
@@ -49,22 +56,23 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 3rem;
 }
 
 
 #about h1{
 
-    color:#3366cc;
+    color: #3366cc;
     font-size: 5rem;
-    font-family: 'Roboto Slab', serif; 
-    padding: 20rem 0rem;;
+    font-family: 'Roboto Slab', serif;
+    margin: 15rem 0rem 5rem 0rem;
     text-align: center;
-    height: 100%;
     width: 100%;
 }
 
 h2.sub-title{
     font-size: 1.5rem;
+    color:#3366cc;
 }
 aside h4 {
     width: 100%;
@@ -74,34 +82,63 @@ aside h4 {
 
 }
 
-article ul.about {
+
+.bio{
+    width: 70rem;
+    margin: 0 auto;
+    padding: .5rem 0rem;
+    background-color: #fff;
+    z-index: 999;
+    border-radius: 1rem;
     display: flex;
-    margin-top: 2rem;
-    height: 18rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-article ul.about li {
-    flex-basis: 33.3%;
-    padding: 1rem;
+article.about {
     text-align: center;
 }
 
-
-
-ul.about li img~p {
+article.about {
+    flex-basis: 21rem;
+    padding: 2rem;
     text-align: center;
-    font-size: 1.3rem;
-    color: #4c4c4cd1;
+    border:1px solid;
+    border-radius: 1rem;
+    margin:1rem;
+    
+}
+
+article.about:nth-child(1){
+    border-color: orange;
+}
+
+article.about:nth-child(2){
+     border-color: #cc33cc;
+   
+}
+
+article.about:nth-child(3){
+     border-color: #33cc33;
+}
+
+article.about img~p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
     font-weight: lighter;
     font-style: italic;
     font-family: "Helvetica", sans-serif;
+    margin: 2rem 0rem;
 }
 
 h2.myself {
     text-align: center;
     font-size: 2.5rem;
-    color: #3a76ed;
+    color: #1877f2;
     font-weight: bold;
+    width: 100%;
 
 
 
@@ -114,6 +151,7 @@ h3.sub-title {
     color: #4c4c4cd1;
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
+    width: 100%;
 }
 
 
@@ -129,17 +167,17 @@ footer {
     background-color: #fff;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 7rem;
     width: 100%;
     margin: 0 auto;
 
 }
 
 .sitemap-item {
-    flex-basis: 26%;
+    flex-basis: 20rem;
    padding: 1rem;
     margin: 2rem 2rem;
     min-width: 18rem;
+    text-align: center;
     
 
 
@@ -213,21 +251,7 @@ p.address a {
 
 
 
-.bio{
-    height: 25rem;
-    width: 70rem;
-    margin: 0 auto;
-    padding: .5rem 0rem;
-    background-color: #fff;
-    z-index: 999;
-    margin-top: -25rem;
-    border-radius: 1rem;
 
-
-
-
-
-}
 
 .page-title{
 
@@ -269,7 +293,7 @@ h2.page-title::after {
     max-width:1400px;
     margin: auto;
     position:fixed;
-    background-color: #fff;
+    background-color: #1877f2;
     z-index: 1003;
     padding: 0rem 15rem 0rem 15rem;
     /*    box-shadow: 0px .5px 2.5px grey;*/
@@ -298,7 +322,7 @@ li{
 .hamburger li{
     height: 0.4rem;
     width: 2.5rem;
-    background-color: #3a76ed;
+    background-color: #fff;
     margin: 0rem 0rem 0.3rem 0rem;
 } 
 
@@ -335,7 +359,7 @@ li{
 
 .menu li a:hover{
 
-    color:#3366CC;
+/*    color:#3366CC;*/
 }
 
 .menu li a:nth-child(5){
@@ -396,7 +420,7 @@ li{
 }
 
 .logo img{
-    margin: 2rem
+    margin: 1.5rem
 
 }
 .fa-stack-overflow, .fa-github, .fa-codepen{
@@ -504,7 +528,7 @@ li{
 #resume{
     
    
-    padding-top: 10rem;
+    
     background-image: url(../images/connection.png);
     background-size: 2rem;
 
@@ -888,7 +912,7 @@ label [for="term"] {
 /*responsive*/
 
 
-@media only screen and (max-width:1100px){
+@media only screen and (max-width:1200px){
     .menu{
         display: none;
     } 
@@ -909,7 +933,7 @@ label [for="term"] {
         margin: 0rem 1rem 0rem 1rem;
     }
 }
-@media only screen and (max-width:1100px){
+@media only screen and (max-width:1200px){
     .hamburger{
         display: block;
 
@@ -925,7 +949,6 @@ label [for="term"] {
 }
 @media only screen and (max-width:390px){
     nav #navigation-phone{
-        float: inherit;
         margin: 2rem 0rem 0rem 18rem;
     }
 }
@@ -1141,7 +1164,7 @@ label [for="term"] {
 @media only screen and (max-width: 600px){
     main#about h1{
         font-size: 4rem;
-        padding:15rem 0rem;
+        
     }
 }
 

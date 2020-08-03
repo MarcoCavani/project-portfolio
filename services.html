@@ -22,20 +22,37 @@
         <title>Marco web development</title>
     </head>
     <style>
-        .btn-about{
-            background-color: #56c0da;
-            padding: .5rem;
-            border-radius: 1rem;
-            margin-top: .5rem;
-            border: none;
-
-
+        .web-services{
+            padding-top: 20rem;
+            border: 1px solid black;
         }
-        a.btn{
-            color: #fff;
-            font-size: 1.5rem;
-            font-family: 'Helvetica', sans-serif;
+        
+        .services{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         }
+        
+        
+        .service{
+            margin: 2rem;
+            
+        }
+        
+        .service-ban{
+            text-align: center;
+        }
+        .service-img{
+            width: 5rem;
+            margin: 0 auto;
+        }
+        
+        .web-service-heading{
+            font-size: 2rem;
+        }
+        
+        
     </style>
     <body>
         <div id="wrapper">
@@ -59,8 +76,8 @@
                         <li class="list"><a href="index.html">About</a></li>
                         <li class="list"><a href="portfolio.html">Portfolio</a></li>
                         <li class="list"><a href="resume.html">Resume</a></li>
+                        <li class="list"><a href="services.html">Services</a></li>
                         <li class="list"><a href="contact.html">Contact</a></li>
-
 
                         <li><a href="https://api.whatsapp.com/send?phone=468825323"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 
@@ -88,46 +105,46 @@
 
 
 
-            <main id="about">
+            <main class="web-services">
 
+                <section class="services">
+                    <aside class="service">
+                        <article class="service-ban">
+                            <img class="service-img" src="images/Attention.png" alt="front-end development">
+                            <h2 class="web-service-heading">Front-end Development</h2>
+                            <p>lorem ipsum dolores man i rotto i sombreros</p>
+                            <p>lorem ipsum dolores man i rotto i sombreros</p>
+                            <p>lorem ipsum dolores man i rotto i sombreros</p>
+                            <p>lorem ipsum dolores man i rotto i sombreros</p>
+                            <p>lorem ipsum dolores man i rotto i sombreros</p>
+                        </article>
+                    </aside>
+                    <aside class="service">
+                        <article class="service-ban">
+                            <img class="service-img" src="images/Attention.png" alt="front-end development">
+                            <h2 class="web-service-heading">SEO</h2>
+                            <p>lorem ipsum dolores man i rotto i sombreros</p>
+                        </article>
+                    </aside>
+                    <aside class="service">
+                        <article class="service-ban">
+                            <img class="service-img" src="images/Attention.png" alt="front-end development">
+                            <h2 class="web-service-heading">UX Design</h2>
+                            <p>lorem ipsum dolores man i rotto i sombreros</p>
+                        </article>
+                    </aside>
+                    <aside class="service">
+                        <article class="service-ban">
+                            <img class="service-img" src="images/Attention.png" alt="front-end development">
+                            <h2 class="web-service-heading">Social Media Marketing</h2>
+                            <p>lorem ipsum dolores man i rotto i sombreros</p>
+                        </article>
+                    </aside>
+                    
+                
 
+                </section>
 
-                <h1 class="parallax">Hello there! I am <span id="name-title">a web developer</span>,<br>
-                    currently designing exciting stuff in <br>Perth, WA.</h1>
-
-
-                <h2 class="myself">ABOUT ME</h2>
-                <h3 class="sub-title">This is who I am</h3>
-                <aside class="bio">
-
-                    <article class="about">
-
-                        <img src="images/clock.png" alt="fast learner icon">
-                        <h2 class="sub-title">Fast learner</h2>
-                        <p>I enjoy grasp new concepts and acquire new technologies.  
-                        </p>
-
-                        <button class="btn-about"><a class="btn" href="learn-web-development.html">Library</a></button>
-                    </article>
-                    <article class="about"><img src="images/commited.png" alt="commited icon">
-                        <h2 class="sub-title">Commited</h2>
-                        <p>I am passionate abaut tackle new challenges and share ideas.
-                        </p>
-                        <button class="btn-about"><a class="btn" href="learn-web-development.html">My Story</a></button>
-                    </article>
-                    <article class="about">
-                        <img src="images/Attention.png" alt="meticulous">
-                        <h2 class="sub-title">Team player</h2>
-                        <p>I enjoy working in new projects that require cooperation.
-                        </p>
-                        <button class="btn-about"><a class="btn" href="learn-web-development.html">Work Ethic</a></button>
-
-                    </article>
-
-
-
-
-                </aside>
             </main>
 
             <footer>
