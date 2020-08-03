@@ -5,6 +5,7 @@ let nav = document.querySelector('nav #navigation-phone');
 let menu = document.querySelector('.menu');
 let menuPhone = document.querySelector('.phone');//container
 let social = document.querySelector('.icons')
+let hamburgerButton = document.querySelector('#navigation-phone')
 let hamburger = document.querySelector('.hamburger');
 let Tracker = document.querySelector('.tracker');
 let list = document.querySelector('.list')
@@ -114,7 +115,7 @@ function init(){
     "use strict";
 
 
-    hamburger.addEventListener('click', function(){
+    hamburgerButton.addEventListener('click', function(){
         menuActive();
         openMenu();
 
