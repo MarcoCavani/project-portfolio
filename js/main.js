@@ -16,30 +16,7 @@ let lastScroll = 0;
 let pageTitlePortfolio = document.querySelector('#portfolio h2');
 let pageTitleContact = document.querySelector('#contact h2');
 let pageTitleResume = document.querySelector('#resume h2');
-let name = ["a student", "Marco"];
-let nameTitle = document.querySelector('#name-title');
 
-
-
-function identity(){
-    
-
-let n = 0;
-    
-        setInterval(function(){
-            nameTitle.innerHTML = name[n];
-            n++;
-            if(n >= name.length){
-               nameTitle.innerHTML = name[1];
-            }
-            
-        }, 1500);
-    
-  
-    
-    
-    
-}
 
 
 
@@ -136,7 +113,6 @@ function init(){
 
     "use strict";
 
-    identity();
 
     hamburger.addEventListener('click', function(){
         menuActive();

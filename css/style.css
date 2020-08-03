@@ -177,10 +177,10 @@ footer {
    padding: 1rem;
     margin: 2rem 2rem;
     min-width: 18rem;
+
+}
+.sitemap-item:nth-child(1){
     text-align: center;
-    
-
-
 }
 
 .sitemap-title {
@@ -1174,6 +1174,14 @@ label [for="term"] {
     } 
 
 }
+
+@media only screen and (max-width:800px){
+    article.about{
+        flex-basis: 29rem;
+    } 
+
+}
+
 
 
 .fb-share-button{
