@@ -9,6 +9,14 @@
     font-size: 10px;
     cursor: default;
 }
+
+@media only screen and (max-width:800px){
+   *{
+        font-size: 12px;
+    } 
+
+}
+
 body{
 /*        min-width: 47rem;*/
 }
