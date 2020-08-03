@@ -133,7 +133,7 @@ article.about:nth-child(3){
 
 article.about img~p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000;
     font-weight: lighter;
     font-style: italic;
@@ -1169,7 +1169,7 @@ label [for="term"] {
         margin: 0 auto;    
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     main#about h1{
         font-size: 4rem;
         
