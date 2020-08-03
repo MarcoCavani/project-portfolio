@@ -32,17 +32,17 @@ function openMenu(){
     if(switcher){
 
         gsap.to(menuPhone, {
-            duration: 0, display: 'none', paddingTop: 100, delay: 0.5
+            duration: 0, display: 'none', paddingTop: 100, delay: 0.2
         });
         gsap.to('.munuSmall', {
-            duration: 0, display: 'none', delay: 0.5
+            duration: 0, display: 'none', delay: 0.2
         });
 
         gsap.to(menuPhone, {
-            duration: 0.4, height: '0vh', delay: 0.4, ease:'expo' 
+            duration: 0.2, height: '0vh', delay: 0.2, ease:'expo' 
         });
         gsap.to(menuS.children, {
-            duration: 0.4, opacity: 0, delay:0, stagger: 0
+            duration: 0.2, opacity: 0, delay:0, stagger: 0
         }) ;     
         gsap.to('.social', {display: 'none', delay: 0});
     }
@@ -51,16 +51,16 @@ function openMenu(){
             duration: 0, display: 'block', paddingTop: 100, delay:0, ease: 'expo'
         });
         gsap.to('.munuSmall', {
-            duration: 0, display: 'block', delay: 0.5
+            duration: 0, display: 'block', delay: 0.2
         });
         gsap.to(menuPhone, {
-            duration: 0.4, height: '100vh', delay: 0, ease:'expo' 
+            duration: 0.2, height: '100vh', delay: 0, ease:'expo' 
         });
         gsap.to(menuS.children, {
-            duration: 0.4, opacity: 1, delay:0.3, stagger: 0.1
+            duration: 0.2, opacity: 1, delay:0.1, stagger: 0.1
         });
 
-        gsap.to('.social', {display: 'block', delay:0.5});
+        gsap.to('.social', {display: 'block', delay:0.2});
 
 
 
@@ -81,25 +81,25 @@ function menuActive(){
 
     if (switcher){
         gsap.to(hamburger.children[1], {
-            duration: 0.3, opacity: 0, 
+            duration: 0.1, opacity: 0, 
         });
         gsap.to(hamburger.children[2], {
-            duration: 0.3, rotation: 45, transformOrigin: '2rem',
+            duration: 0.1, rotation: 45, transformOrigin: '2rem',
         });
         gsap.to(hamburger.children[0], {
-            duration: 0.3, rotation: -45, transformOrigin: '2.5rem',
+            duration: 0.1, rotation: -45, transformOrigin: '2.5rem',
         });
         switcher = false;
 
     }else{
         gsap.to(hamburger.children[1], {
-            duration: 0.3, opacity: 1, 
+            duration: 0.1, opacity: 1, 
         });
         gsap.to(hamburger.children[2], {
-            duration: 0.3, rotation: 0, transformOrigin: 'bottom right',
+            duration: 0.1, rotation: 0, transformOrigin: 'bottom right',
         });
         gsap.to(hamburger.children[0], {
-            duration: 0.3, rotation: 0, transformOrigin: 'top right',
+            duration: 0.1, rotation: 0, transformOrigin: 'top right',
         });
         switcher = true;
 
