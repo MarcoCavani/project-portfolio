@@ -176,6 +176,7 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+    border: 1px solid;
 
 }
 
@@ -868,7 +869,6 @@ iframe {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid gray;
     justify-content: space-around;
     padding: 10rem;
 }
@@ -1170,12 +1170,7 @@ label [for="term"] {
     }
 }
 
-@media only screen and (max-width:1100px){
-    footer{
-        width:70%;
-    } 
 
-}
 
 @media only screen and (max-width:800px){
     article.about{
