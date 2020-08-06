@@ -105,21 +105,21 @@
 
                         <img src="images/clock.png" alt="fast learner icon">
                         <h2 class="sub-title">Fast learner</h2>
-                        <p>I enjoy grasp new concepts and acquire new technologies.  
+                        <p>I like to grasp new concepts and acquire new technologies.  
                         </p>
 
                         <button class="btn-about"><a class="btn" href="learn-web-development.html">Library</a></button>
                     </article>
                     <article class="about"><img src="images/commited.png" alt="commited icon">
                         <h2 class="sub-title">Commited</h2>
-                        <p>I am passionate abaut tackle new challenges and share ideas.
+                        <p>I am passionate about tackling new challenges and sharing ideas.
                         </p>
                         <button class="btn-about"><a class="btn" href="learn-web-development.html">My Story</a></button>
                     </article>
                     <article class="about">
                         <img src="images/Attention.png" alt="meticulous">
                         <h2 class="sub-title">Team player</h2>
-                        <p>I enjoy working in new projects that require cooperation.
+                        <p>I enjoy working on new projects that require cooperation.
                         </p>
                         <button class="btn-about"><a class="btn" href="learn-web-development.html">Work Ethic</a></button>
 
@@ -237,7 +237,7 @@
 
                 <aside class="sitemap-item">
                     <h2 class="sitemap-title">let's talk</h2>
-                    <ul><li><a href="https://api.whatsapp.com/send?phone=468825323"><img src="images/whatsapp.svg" alt="Whatsapp icon" style="height: 4rem;"></a></li></ul>
+                    <script>FB.CustomerChat.show(shouldShowDialog: boolean);</script>
                 </aside><br>
 
                 <!-- https://wa.me/468825323-->
@@ -255,6 +255,14 @@
         <!--facebook SDK--> 
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=1443249475988514&autoLogAppEvents=1" nonce="URCaDfE0"></script>
+        <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        
 
     </body>
 
