@@ -22,7 +22,7 @@ function pageSet(value){
 
 
 
-        case 'Unit 1-10':
+        case 'Unit 1-12':
 
             page[0].setAttribute('style', 'z-index:' + num + ';');
             tab[0].style.border = '2px solid';
@@ -30,19 +30,19 @@ function pageSet(value){
             
             break;
             
-        case 'Unit 11-20':
+        case 'Unit 13-23':
             page[1].setAttribute('style', 'z-index:' + num + ';');
             tab[1].style.border = '2px solid';
             tab[1].style.color = '#3366cc';
             break;
             
-        case 'Unit 21-30':
+        case 'Unit diploma':
             page[2].setAttribute('style', 'z-index:' + num + ';');
             tab[2].style.border = '2px solid';
             tab[2].style.color = '#3366cc';
             break;
             
-        case 'Unit 31-40':
+        case 'Unit Diploma':
             page[3].setAttribute('style', 'z-index:' + num + ';');
             tab[3].style.border = '2px solid';
             tab[3].style.color = '#3366cc';

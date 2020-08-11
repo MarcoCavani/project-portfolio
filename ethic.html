@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=600" />
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -19,14 +19,10 @@
         <meta property="og:title"         content="Marco web development" />
         <meta property="og:description"   content="This is a web developer Portfolio." />
         <meta property="og:image"          content="https://wonderful-bardeen-41fdc2.netlify.app/images/logo1.png" />
-        <link rel="shortcut icon" href="images/logo2.png" />
+        <link rel="shortcut icon" href="images/MWDlogoShortcut.png" />
         <title>Marco web development</title>
     </head>
-    
-       
-    <style>
-        
-    </style>
+  
     <body>
         <div id="wrapper">
 
@@ -34,7 +30,7 @@
 
                 <a href="index.html" class="logo">
 
-                    <img src="images/logo-bg.png" alt="Logo Marco web development">
+                    <img src="images/logoMarcoWebDevelopment.png" alt="Logo Marco web development">
                 </a>
 
                 <nav id="navigation-phone">
@@ -49,8 +45,8 @@
                         <li class="list"><a href="index.html">About</a></li>
                         <li class="list"><a href="portfolio.html">Portfolio</a></li>
                         <li class="list"><a href="resume.html">Resume</a></li>
-                        <li class="list"><a href="services.html">Services</a></li>
                         <li class="list"><a href="contact.html">Contact</a></li>
+
 
                         <li><a href="https://api.whatsapp.com/send?phone=468825323"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 
@@ -76,12 +72,28 @@
 
 
 
+            <!--Punctuality, Responsibility, Integrity, Loyalty, Teamwork, Positive Attitude, Professionalism-->
 
+            <main class="work-ethic">
+                <h2 class="page-title">Work ethic</h2>
+                <article class="story">
+                    <h3 class="ethic">What can you aspect from me?</h3><br>
 
-            <main class="web-services">
+                    <ul class="ethic-container">
+                        <li class="ethic-value">Punctuality</li>
+                        <li class="ethic-value">Responsibility</li>
+                        <li class="ethic-value">Integrity</li>
+                        <li class="ethic-value">Loyalty</li>
+                        <li class="ethic-value">Teamwork</li>
+                        <li class="ethic-value">Positive Attitude</li>
+                        <li class="ethic-value">Professionalism</li>
 
-               
+                    </ul>
+
+                </article>
             </main>
+
+
 
             <footer>
 
@@ -98,7 +110,7 @@
                         </p>
                         <a href="https://www.northmetrotafe.wa.edu.au/courses/diploma-website-development" target="_blank"
                            rel="noopener">
-                            <img src="images/w.png" alt="logo north metroplitan tafe" class="North-Metropolitan">
+                            <img src="images/logoNMTAFE.png" alt="logo north metroplitan tafe" class="North-Metropolitan">
                         </a>
                     </article>
                 </aside>
@@ -187,10 +199,7 @@
                     </article>
                 </aside>
 
-                <aside class="sitemap-item">
-                    <h2 class="sitemap-title">let's talk</h2>
-                    <ul><li><a href="https://api.whatsapp.com/send?phone=468825323"><img src="images/whatsapp.svg" alt="Whatsapp icon" style="height: 4rem;"></a></li></ul>
-                </aside><br>
+
 
                 <!-- https://wa.me/468825323-->
 
@@ -202,11 +211,19 @@
 
         <script src="js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-
+        <script src="js/services.js"></script>
 
         <!--facebook SDK--> 
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=1443249475988514&autoLogAppEvents=1" nonce="URCaDfE0"></script>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
 
     </body>
 

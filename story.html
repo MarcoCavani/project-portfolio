@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=600" />
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -19,14 +19,10 @@
         <meta property="og:title"         content="Marco web development" />
         <meta property="og:description"   content="This is a web developer Portfolio." />
         <meta property="og:image"          content="https://wonderful-bardeen-41fdc2.netlify.app/images/logo1.png" />
-        <link rel="shortcut icon" href="images/logo2.png" />
+        <link rel="shortcut icon" href="images/MWDlogoShortcut.png" />
         <title>Marco web development</title>
     </head>
-    
-       
-    <style>
-        
-    </style>
+   
     <body>
         <div id="wrapper">
 
@@ -34,7 +30,7 @@
 
                 <a href="index.html" class="logo">
 
-                    <img src="images/logo-bg.png" alt="Logo Marco web development">
+                    <img src="images/logoMarcoWebDevelopment.png" alt="Logo Marco web development">
                 </a>
 
                 <nav id="navigation-phone">
@@ -49,8 +45,8 @@
                         <li class="list"><a href="index.html">About</a></li>
                         <li class="list"><a href="portfolio.html">Portfolio</a></li>
                         <li class="list"><a href="resume.html">Resume</a></li>
-                        <li class="list"><a href="services.html">Services</a></li>
                         <li class="list"><a href="contact.html">Contact</a></li>
+
 
                         <li><a href="https://api.whatsapp.com/send?phone=468825323"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 
@@ -78,10 +74,22 @@
 
 
 
-            <main class="web-services">
+            <main class="my-story">
+                <h2 class="page-title">Commitment</h2>
+                <article class="story">
+                    <h3 class="story-commitment">When Web development become a passion</h3><br>
+                    <p class="commitment">
+                        In 2013 I moved from Europe to Australia and immediately felt in love with the freedom that I was experiencing.</p> <br> <p class="commitment">Soon after, I realized that web development would be my profession. <br> Why? In one word, Freedom! <br> I thought that, as a web developer I could connect with others no matter the distances.<br><br> Moreover, I enjoyed the idea of being location independent.
+                    </p> <br>
+                    <p class="commitment">In 2015 I meet Professor M. Campinoti who taught me the foundation of programming.</p><p class="commitment">
+                    Along with that I start to read through the <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> and others <a href="reference.html">online resources</a>. <br> In 2019 I decide to study <a href="https://www.northmetrotafe.wa.edu.au/courses/industries/information-technology-library-and-digital/website-design-and-software-development">Website development</a> at <a href="https://www.northmetrotafe.wa.edu.au/">North Metropolitan TAFE</a> and the rest is about to come!!
+                    </p>
 
-               
+
+                </article>
             </main>
+
+
 
             <footer>
 
@@ -98,7 +106,7 @@
                         </p>
                         <a href="https://www.northmetrotafe.wa.edu.au/courses/diploma-website-development" target="_blank"
                            rel="noopener">
-                            <img src="images/w.png" alt="logo north metroplitan tafe" class="North-Metropolitan">
+                            <img src="images/logoNMTAFE.png" alt="logo north metroplitan tafe" class="North-Metropolitan">
                         </a>
                     </article>
                 </aside>
@@ -187,10 +195,7 @@
                     </article>
                 </aside>
 
-                <aside class="sitemap-item">
-                    <h2 class="sitemap-title">let's talk</h2>
-                    <ul><li><a href="https://api.whatsapp.com/send?phone=468825323"><img src="images/whatsapp.svg" alt="Whatsapp icon" style="height: 4rem;"></a></li></ul>
-                </aside><br>
+
 
                 <!-- https://wa.me/468825323-->
 
@@ -202,11 +207,19 @@
 
         <script src="js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-
+        <script src="js/services.js"></script>
 
         <!--facebook SDK--> 
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=1443249475988514&autoLogAppEvents=1" nonce="URCaDfE0"></script>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
 
     </body>
 
